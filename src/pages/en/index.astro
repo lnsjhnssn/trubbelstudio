@@ -1,10 +1,10 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION_EN } from "../../consts";
 import { getCollection } from "astro:content";
-import FormattedDate from "../components/FormattedDate.astro";
+import FormattedDate from "../../components/FormattedDate.astro";
 
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
@@ -14,15 +14,14 @@ const posts = (await getCollection("blog")).sort(
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION_FR} />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION_EN} />
   </head>
   <body>
     <Header />
     <main>
       <h1>Trubbelstudio</h1>
       <p class="subtitle">
-        Développement web, design sonore et de la musique. Basé à Genève.
-        Contact
+        Web development, sound design and music. Based in Geneva. Contact
         <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
           >lnsjhnssn@gmail.com</a
         >.
@@ -37,9 +36,9 @@ const posts = (await getCollection("blog")).sort(
                   <FormattedDate date={post.data.pubDate} />
                 </p>
 
-                <h3 class="title">{post.data.titre_francais}</h3>
+                <h3 class="title">{post.data.title_english}</h3>
 
-                <p class="description">{post.data.description_francais}</p>
+                <p class="description">{post.data.description_english}</p>
                 <p class="link">
                   <a href={post.data.link} target="_blank">
                     {post.data.link}
