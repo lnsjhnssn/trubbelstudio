@@ -4,5 +4,95 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-  <nav></nav>
+  <nav>
+    <HeaderLink href="/">FR</HeaderLink>
+    <HeaderLink href="/en">EN</HeaderLink>
+  </nav>
 </header>
+
+<style>
+  header {
+    background-color: blue;
+    align-items: center;
+  }
+</style>
+
+<style>
+  header {
+    display: flex;
+    padding-block: var(--space-s);
+    background-color: var(--gray-1);
+    max-width: 720px;
+  }
+
+  nav {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: var(--space-s);
+    max-width: 720px;
+  }
+
+  .links {
+    display: flex;
+    align-items: stretch;
+    gap: var(--space-2xs);
+    margin-inline-end: calc(-1 * var(--space-s));
+
+    a,
+    button {
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      text-decoration: none;
+      line-height: 1;
+      color: var(--gray-12);
+      padding: var(--space-xs) var(--space-s);
+      border: none;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: font-weight 0.2s ease-in-out;
+
+      @media (hover: hover) and (pointer: fine) {
+        &:hover {
+          font-weight: var(--font-weight-bold);
+        }
+
+        &:active {
+          transition: none;
+        }
+      }
+
+      &.active {
+        font-weight: var(--font-weight-bold);
+      }
+    }
+
+    button[data-theme-toggle] {
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-sizing: content-box;
+      width: 20px;
+      height: 20px;
+      padding-inline: var(--space-xs);
+
+      :global(svg) {
+        transform-origin: 50% 200%;
+        transition:
+          transform 0.4s ease-out,
+          opacity 0.2s ease-in-out;
+        position: absolute;
+      }
+    }
+  }
+
+  :global(body:not(.dark) .moon) {
+    transform: rotate(60deg);
+  }
+
+  :global(.dark .sun) {
+    transform: rotate(-60deg);
+  }
+</style>
