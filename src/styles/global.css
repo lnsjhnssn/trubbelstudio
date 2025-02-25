@@ -110,30 +110,6 @@ a {
   font-variation-settings: "wght" 400;
 }
 
-@font-face {
-  font-family: "LumaSans";
-  src: url("/fonts/FAIRE-LumaSans-Trial-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-  font-variation-settings: "wght" 400;
-}
-
-@font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Atkinson";
-  src: url("/fonts/atkinson-bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   font-family: "Hex Franklin", sans-serif;
   /* font-family: "LumaSans", sans-serif; */
