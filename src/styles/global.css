@@ -196,10 +196,6 @@ a {
   color: inherit;
 }
 
-a:hover {
-  color: var(--accent);
-}
-
 p {
   margin-bottom: 1em;
 }
@@ -246,11 +242,14 @@ img {
   margin-top: var(--space-l);
 }
 
-.mail-link:hover {
-  font-weight: var(--font-weight-bold);
-  text-decoration: none;
-  font-variation-settings: "slnt" -5;
-  transition: 0.3s ease-in-out;
+@media (hover: hover) {
+  .mail-link:hover {
+    font-weight: var(--font-weight-bold);
+    color: var(--accent);
+    text-decoration: none;
+    font-variation-settings: "slnt" -5;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .description {
@@ -290,7 +289,7 @@ ul li a {
 
 @media (hover: hover) {
   .link:hover {
-    color: rgb(var(--accent));
+    color: var(--accent);
     font-weight: var(--font-weight-bold);
     font-variation-settings: "slnt" -5;
   }

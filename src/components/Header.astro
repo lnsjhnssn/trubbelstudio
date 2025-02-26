@@ -28,10 +28,12 @@ import { SITE_TITLE } from "../consts";
     text-decoration: none;
   }
 
-  a:hover {
-    font-weight: var(--font-weight-bold);
-    transition: font-weight 0.2s ease-in-out;
-    color: var(--gray-12);
+  @media (hover: hover) {
+    a:hover {
+      font-weight: var(--font-weight-bold);
+      transition: font-weight 0.2s ease-in-out;
+      color: var(--gray-12);
+    }
   }
 
   a.active {
