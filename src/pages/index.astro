@@ -21,8 +21,7 @@ const posts = (await getCollection("blog")).sort(
     <main>
       <h1>Trubbelstudio</h1>
       <p class="subtitle">
-        Développement web, design sonore et de la musique. Basé à Genève.
-        Contact
+        Développement web, design sonore & musique. Basé à Genève. Contact
         <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
           >lnsjhnssn@gmail.com</a
         >.
@@ -37,7 +36,7 @@ const posts = (await getCollection("blog")).sort(
                   <FormattedDate date={post.data.pubDate} />
                 </p>
 
-                <h3 class="title">{post.data.titre_francais}</h3>
+                <h2 class="title">{post.data.titre_francais}</h2>
 
                 <p class="description">{post.data.description_francais}</p>
                 <p class="link">
