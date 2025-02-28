@@ -19,9 +19,8 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Header />
     <main>
-      <h1>Trubbelstudio</h1>
       <p class="subtitle">
-        Web development, sound design & music. Based in Geneva. Contact
+        Web dev, sound & music. <br />
         <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
           >lnsjhnssn@gmail.com</a
         >.
@@ -36,7 +35,7 @@ const posts = (await getCollection("blog")).sort(
                   <FormattedDate date={post.data.pubDate} />
                 </p>
 
-                <h2 class="title">{post.data.title_english}</h2>
+                <h3 class="title">{post.data.title_english}</h3>
 
                 <p class="description">{post.data.description_english}</p>
                 <p class="link">
