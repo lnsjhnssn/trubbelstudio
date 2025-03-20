@@ -96,10 +96,14 @@ a {
   --font-weight-medium: 500;
   --font-weight-bold: 600;
 
+  /* Colors */
   --accent: var(--blue-11);
   --light-gray: var(--gray-9);
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
     0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
+  --background: rgb(155, 224, 234);
+  --text-color: #111;
+  --gray-color: #424242;
 }
 
 /* @font-face {
@@ -123,8 +127,8 @@ a {
 body {
   font-family: "Recursive", sans-serif;
   /* font-family: "LumaSans", sans-serif; */
-  background: #111;
-  color: #eee;
+  background: var(--background);
+  color: var(--text-color);
   flex-direction: column;
   align-items: center;
   font-weight: 380;
@@ -157,7 +161,7 @@ strong {
 
 a {
   text-decoration: underline;
-  text-decoration-color: var(--gray-8);
+  text-decoration-color: var(--gray-color);
   text-underline-offset: max(0.15em, 2.5px);
   /* transition: text-decoration 0.2s ease-in-out, font-weight 0.2s ease-in-out; */
 }
@@ -169,7 +173,7 @@ h4,
 h5,
 h6 {
   font-weight: var(--font-weight-bold);
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: var(--letter-spacing-loose);
 }
 h1 {
@@ -238,6 +242,12 @@ img {
 
 /* index.astro */
 
+.title {
+  font-size: var(--step-1);
+  font-variation-settings: "wght" 650, "slnt" -5.4, "CASL" 0, "CRSV" 1, "MONO" 0;
+  --mono: "MONO" 0;
+}
+
 .subtitle {
   font-size: var(--step-1);
   margin-bottom: var(--space-2xl);
@@ -280,12 +290,12 @@ ul li a {
 
 .date {
   margin: var(--space-3xs) 0;
-  color: var(--gray-9);
+  color: var(--gray-color);
   font-size: var(--step--1);
 }
 
 .link {
-  color: var(--gray-10);
+  color: var(--gray-color);
   font-weight: var(--font-weight-normal);
 }
 
