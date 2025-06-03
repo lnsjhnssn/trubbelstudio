@@ -13,7 +13,7 @@ const sortedPosts = allBlogPosts.sort(
     sortedPosts.map((post, index) => (
       <li>
         <div class="card">
-          <p class="date">
+          {/* <p class="date">
             <FormattedDate date={post.data.pubDate} />
           </p>
 
@@ -24,7 +24,7 @@ const sortedPosts = allBlogPosts.sort(
             <a href={post.data.link} target="_blank">
               {post.data.link}
             </a>
-          </p>
+          </p> */}
           {post.data.cover && (
             <Image
               class="image"
@@ -43,16 +43,24 @@ const sortedPosts = allBlogPosts.sort(
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-3xl);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--space-l);
+    margin: 0 auto;
+  }
+
+  .card {
+    width: 100%;
   }
 
   .image {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    border-radius: 0;
     display: block;
+    aspect-ratio: 4/3;
+    object-fit: cover;
   }
 
   a:hover {

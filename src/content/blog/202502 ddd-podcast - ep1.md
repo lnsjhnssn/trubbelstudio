@@ -5,4 +5,6 @@ description_francais: Mixage et design sonore pour le podcast ddd de l’AVDC. �
 description_english: Mix and sound design for the podcast "ddd" by the AVDC. Episode 1 premiered in February 2025.
 pubDate: "Feb 23 2025"
 link: https://avdc-ddd.ch/resources/podcasts/
+cover: "ddd-podcast.png"
+coverAlt: Screenshot of an embeded SoundCloud player with the title Les "nouveaux" récits
 ---
