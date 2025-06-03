@@ -1,54 +1,41 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Layout from "../layouts/Layout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
 import { getCollection } from "astro:content";
-import FormattedDate from "../components/FormattedDate.astro";
-
-const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-);
+import { Image } from "astro:assets";
+import Blog from "../components/Blog.astro";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION_FR} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <p class="subtitle">
-        Web dev, son & musique. <br />
-        <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
-          >lnsjhnssn@gmail.com</a
-        >.
-      </p>
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
+  <main>
+    <p class="subtitle">
+      technologist from sweden, currently living in geneva, switzerland. I
+      create websites and I make and mix sound. previously @ Umeå University
+      studying information science(Bachelor of Science) get in touch, I am
+      looking for work.
+      <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
+        >lnsjhnssn@gmail.com</a
+      >
+    </p>
 
-      <section>
-        <ul>
-          {
-            posts.map((post) => (
-              <li>
-                <p class="date">
-                  <FormattedDate date={post.data.pubDate} />
-                </p>
+    <section>
+      <Blog />
+    </section>
+  </main>
+</Layout>
 
-                <h3 class="title">{post.data.titre_francais}</h3>
+<style>
+  .subtitle {
+    margin-bottom: var(--space-2xl);
+  }
 
-                <p class="description">{post.data.description_francais}</p>
-                <p class="link">
-                  <a href={post.data.link} target="_blank">
-                    {post.data.link}
-                  </a>
-                </p>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
-    <Footer />
-  </body>
-</html>
+  @media (hover: hover) {
+    .mail-link:hover {
+      font-weight: var(--font-weight-bold);
+      color: var(--accent);
+      text-decoration: none;
+      font-variation-settings: "slnt" -5;
+      transition: 0.3s ease-in-out;
+    }
+  }
+</style>

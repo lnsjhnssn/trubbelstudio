@@ -1,23 +1,26 @@
 @import "./reset.css";
 @import "./theme.css";
+@import "./fonts.css";
 
 body {
-  font-family: "Recursive", sans-serif;
-  font-variation-settings: "wght" 400, "slnt" 0, "CASL" 0, "CRSV" 0, "MONO" 0.68;
+  /* font-family: "Recursive", sans-serif;
+  font-variation-settings: "wght" 400, "slnt" 0, "CASL" 0, "CRSV" 0, "MONO" 0.68; */
 
   /* font-family: "LumaSans", sans-serif;   */
   /* font-family: "Archivo", sans-serif; */
   /* font-family: "HEX Franklin", sans-serif; */
   /* font-family: "Roboto Flex", sans-serif; */
-  background: var(--background);
+  font-family: "Geist";
+  background: var(--mist-bg);
+  background-image: url("../assets/images/nnnoise-transparent.svg");
+  background-repeat: repeat;
   color: var(--text-color);
   flex-direction: column;
   align-items: center;
-  font-weight: 380;
+  font-weight: var(--font-weight-normal);
   margin: 0;
   padding: 0;
   text-align: left;
-  background-size: 100% 600px;
   font-size: var(--step-0);
   line-height: 1.6;
   display: flex;
@@ -39,7 +42,7 @@ strong {
 
 a {
   text-decoration: underline;
-  text-decoration-color: var(--gray-color);
+  text-decoration-color: var(--mist-text);
   text-underline-offset: max(0.15em, 2.5px);
   /* transition: text-decoration 0.2s ease-in-out, font-weight 0.2s ease-in-out; */
 }
@@ -103,13 +106,13 @@ img {
 /* index.astro */
 
 .title {
-  font-size: var(--step-1);
+  /* font-size: var(--step-1); */
   font-variation-settings: "wght" 650; /*"CRSV" 3, "MONO" 0;
   --mono: "MONO" 0; */
 }
 
 .subtitle {
-  font-size: var(--step-1);
+  /* font-size: var(--step-1); */
   margin-bottom: var(--space-2xl);
   margin-top: var(--space-xl);
 }
@@ -149,13 +152,13 @@ ul li a {
 }
 
 .date {
-  margin: var(--space-3xs) 0;
-  color: var(--gray-color);
+  margin-bottom: var(--space-3xs) 0;
+  color: var(--mist-text);
   font-size: var(--step--1);
 }
 
 .link {
-  color: var(--accent);
+  color: var(--mist-text);
   font-weight: var(--font-weight-normal);
 }
 

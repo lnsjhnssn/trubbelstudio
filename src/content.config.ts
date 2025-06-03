@@ -3,19 +3,21 @@ import { defineCollection, z } from "astro:content";
 
 const blog = defineCollection({
   // Load Markdown and MDX files in the `src/content/blog/` directory.
-  loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
+  // loader: glob({ base: "./src/content/blog", pattern: "**/*.{md,mdx}" }),
   // Type-check frontmatter using a schema
-  schema: z.object({
-    title_english: z.string(),
-    description_english: z.string(),
-    titre_francais: z.string(),
-    description_francais: z.string(),
-    // Transform string to Date object
-    pubDate: z.coerce.date(),
-    updatedDate: z.coerce.date().optional(),
-    link: z.string().optional(),
-    heroImage: z.string().optional(),
-  }),
+  schema: ({ image }) =>
+    z.object({
+      title_english: z.string(),
+      description_english: z.string(),
+      titre_francais: z.string(),
+      description_francais: z.string(),
+      // Transform string to Date object
+      pubDate: z.coerce.date(),
+      updatedDate: z.coerce.date().optional(),
+      link: z.string().optional(),
+      cover: image().optional().nullable(),
+      coverAlt: z.string().optional().nullable(),
+    }),
 });
 
 export const collections = { blog };

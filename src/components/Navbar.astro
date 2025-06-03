@@ -1,0 +1,71 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title = "intentional" } = Astro.props;
+---
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <a href="/" class="navbar-brand">
+      {title}
+    </a>
+
+    <div class="navbar-menu">
+      <a href="/about" class="navbar-link">about</a>
+      <a href="/projects" class="navbar-link">projects</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-container {
+    width: 770px;
+    max-width: calc(100% - 2em);
+    margin: 0 auto;
+    padding: var(--space-m);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size: var(--step-1);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+    color: var(--meadow-text);
+    transition: color 0.6s ease;
+    padding: 2px 5px;
+    background: var(--gray-12);
+    color: var(--mist-bg);
+
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .navbar-brand:hover {
+    color: var(--white);
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+</style>

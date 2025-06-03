@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
 :root {
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.125,720,21,1.25,6,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
   --step--1: clamp(0.8889rem, 0.88rem + 0.0444vi, 0.9rem);
@@ -50,11 +52,47 @@
   --font-weight-bold: 600;
 
   /* Colors */
-  --accent: var(--blue-11);
-  --light-gray: var(--gray-9);
-  --box-shadow: 0 2px 6px rgba(var(--gray), 25%),
-    0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%);
-  --background: rgb(237, 237, 237);
-  --text-color: #111;
-  --gray-color: #424242;
+
+  --background: hsl(35, 60%, 60%);
+  --accent: var(--blue-12);
+  --text-color: var(--gray-12);
+  --gray-color: var(--gray-10);
+  --black: var(--gray-12);
+  --white: var(--gray-2);
+
+  /* colors from https://playmosaic.om  
+  a game designed by Graciela Smet — 
+  https://www.gracielasmet.com/*/
+  --mist-bg: rgb(234, 230, 219);
+  --mist-text: rgb(105, 105, 103);
+  --meadow-bg: rgb(239, 234, 178);
+  --meadow-text: rgb(99, 185, 150);
+  --fern-bg: rgb(241, 244, 116);
+  --fern-text: rgb(130, 133, 103);
+  --apple-bg: rgb(90, 209, 76);
+  --apple-text: rgb(62, 23, 68);
+  --sky-bg: rgb(173, 217, 216);
+  --sky-text: rgb(105, 114, 171);
+  --sand-bg: rgb(230, 212, 175);
+  --sand-text: rgb(58, 80, 101);
+  --saffron-bg: rgb(252, 226, 103);
+  --saffron-text: rgb(227, 59, 84);
+  --basil-bg: rgb(153, 187, 66);
+  --basil-text: rgb(40, 64, 64);
+  --satin-bg: rgb(245, 184, 190);
+  --satin-text: rgb(177, 55, 69);
+  --orchid-bg: rgb(240, 106, 165);
+  --orchid-text: rgb(117, 1, 14);
+  --pumpkin-bg: rgb(206, 86, 18);
+  --pumpkin-text: rgb(247, 170, 41);
+  --cherry-bg: rgb(176, 12, 27);
+  --cherry-text: #fbea92;
+  --lagoon-bg: rgb(25, 114, 120);
+  --lagoon-text: rgb(237, 221, 212);
+  --amethyst-bg: rgb(108, 61, 113);
+  --amethyst-text: rgb(177, 202, 232);
+  --cinnamon-bg: rgb(114, 61, 70);
+  --cinnamon-text: rgb(255, 225, 168);
+  --fudge-bg: #3b090e;
+  --fudge-text: rgb(193, 53, 71);
 }
