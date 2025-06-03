@@ -10,6 +10,9 @@ const { title = "intentional" } = Astro.props;
   <div class="navbar-container">
     <a href="/" class="navbar-brand">
       {title}
+      <div class="typewriter">
+        <span class="typewriter-text"></span>
+      </div>
     </a>
 
     <div class="navbar-menu">
@@ -33,14 +36,15 @@ const { title = "intentional" } = Astro.props;
   }
 
   .navbar-brand {
-    font-size: var(--step-1);
-    font-weight: var(--font-weight-bold);
+    font-size: var(--step-0);
+    font-weight: var(--font-weight-normal);
     text-decoration: none;
-    color: var(--meadow-text);
+    /* color: var(--meadow-text); */
     transition: color 0.6s ease;
-    padding: 2px 5px;
-    background: var(--gray-12);
-    color: var(--mist-bg);
+    /* padding: 2px 5px;
+    background: var(--gray-12); */
+    /* color: var(--apple-bg); */
+    /* background-color: var(--amethyst-text); */
 
     border-radius: 4px;
     display: flex;
@@ -66,4 +70,77 @@ const { title = "intentional" } = Astro.props;
   .navbar-link:hover {
     text-decoration: underline;
   }
+
+  .typewriter {
+    display: inline-block;
+  }
+
+  .typewriter-text {
+    display: inline-block;
+    min-width: 100px;
+  }
+
+  .typewriter-text::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    from,
+    to {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 </style>
+
+<script>
+  const words = [
+    "audio",
+    "website",
+    "design",
+    "studio",
+    "noise",
+    "development",
+    "sound",
+  ];
+  const typewriterText = document.querySelector(".typewriter-text");
+
+  if (typewriterText) {
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let typingDelay = 100; // Speed of typing
+    let wordDelay = 2000; // 2 seconds between words
+
+    function type() {
+      const currentWord = words[wordIndex];
+
+      if (isDeleting) {
+        typewriterText.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+        typingDelay = 50; // Faster when deleting
+      } else {
+        typewriterText.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+        typingDelay = 200; // Normal typing speed
+      }
+
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        typingDelay = wordDelay; // Pause at the end of word
+      } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+        typingDelay = 700; // Pause before starting new word
+      }
+
+      setTimeout(type, typingDelay);
+    }
+
+    // Start the animation when the page loads
+    window.addEventListener("load", type);
+  }
+</script>

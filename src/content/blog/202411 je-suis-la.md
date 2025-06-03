@@ -5,6 +5,6 @@ titre_francais: Je suis là
 description_francais: Design sonore pour le spectacle Je suis là de Murielle Bechame. Première en novembre 2024 au Théâtre Am Stram Gram à Genève.
 pubDate: "Nov 19 2024"
 link: https://www.amstramgram.ch/fr/programme/je-suis-la
-cover: "jesuisla.jpg"
+cover: "jesuisla.png"
 coverAlt: Photo of some young persons holding up their hands
 ---

@@ -8,15 +8,21 @@ import Blog from "../components/Blog.astro";
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
   <main>
-    <p class="subtitle">
-      technologist from sweden, currently living in geneva, switzerland. I
-      create websites and I make and mix sound. previously @ Umeå University
-      studying information science(Bachelor of Science) get in touch, I am
-      looking for work.
-      <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
-        >lnsjhnssn@gmail.com</a
-      >
-    </p>
+    <div class="subtitle">
+      <p>creative technologist from sweden, currently living in geneva.</p>
+      <p>
+        I design and develop websites • I create and mix sound • +10 years as
+        sound designer and engineer for theatre and dance • makes music with old
+        amica and folkvang • speaks english, french, swedish
+      </p>
+
+      <p>
+        get in touch: <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
+          >lnsjhnssn@gmail.com</a
+        >
+      </p>
+      <p></p>
+    </div>
 
     <section>
       <Blog />
@@ -27,6 +33,7 @@ import Blog from "../components/Blog.astro";
 <style>
   .subtitle {
     margin: var(--space-xl) 0;
+    max-width: 570px;
   }
 
   @media (hover: hover) {

@@ -5,6 +5,6 @@ titre_francais: Old Amica / Aiko Takahashi [split ep]
 description_francais: Split cassette ep "Vikande blå / Nuages". Handstitched Records le 7 mars 2025.
 pubDate: "Feb 27 2025"
 link: https://handstitched.bandcamp.com/album/vikande-bl-nuages
-cover: "vikandebla_oldamica.jpg"
+cover: "vikandebla.jpg"
 coverAlt: "Photo of some cassettes tapes that says Old Amica - Vikande blå"
 ---
