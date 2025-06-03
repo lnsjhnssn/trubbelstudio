@@ -1,28 +1,4 @@
 @font-face {
-  font-family: "STIX Two Text";
-  src: url("/fonts/STIXTwoText-variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HEX Franklin";
-  src: url("/fonts/HEX_Franklin_v0.3_Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Roboto Flex";
-  src: url("/fonts/RobotoFlex-variable.ttf") format("ttf");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Geist";
   src: url("/fonts/Geist-VariableFont_wgh.ttf") format("ttf");
   font-weight: 100 900;
