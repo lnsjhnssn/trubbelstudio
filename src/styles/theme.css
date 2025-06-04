@@ -92,4 +92,8 @@
   --cinnamon-text: rgb(255, 225, 168);
   --fudge-bg: #3b090e;
   --fudge-text: rgb(193, 53, 71);
+
+  --lynn-text: rgb(61, 243, 194);
+  --lynn-bg: rgb(66, 0, 90);
+  --lynn-bg2: hsl(284, 100%, 5%);
 }
