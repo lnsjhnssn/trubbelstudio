@@ -2,22 +2,36 @@
 import Layout from "../layouts/Layout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
 import Blog from "../components/Blog.astro";
+
+import Bluesky from "../assets/images/bluesky.svg";
+import GitHub from "../assets/images/github.svg";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
   <main>
     <div class="subtitle">
       <p>
-        Creative technologist from Norrbotten, Sweden. <br />Currently living in
-        Geneva, Switzerland
+        Web developer && Sound maker from Norrbotten, Sweden.
+        <br />
+        Living in Geneva, Switzerland
       </p>
-      <p>I design and develop websites. I make and mix sound.</p>
       <p>
-        Get in touch: <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
-          >lnsjhnssn@gmail.com</a
-        >
+        I am available for work. Get in touch:
+        <a href="mailto:lnsjhnssn@gmail.com" class="mail-link">
+          lnsjhnssn@gmail.com
+        </a>
       </p>
-      <p></p>
+      <div class="social-links">
+        <a href="https://github.com/lnsjhnssn" class="out-link">
+          <GitHub width={22} height={22} fill="currentColor" />
+        </a>
+        <a
+          href="https://bsky.app/profile/linusjohansson.bsky.social"
+          class="out-link"
+        >
+          <Bluesky width={22} height={22} fill="currentColor" />
+        </a>
+      </div>
     </div>
 
     <section>
@@ -32,13 +46,10 @@ import Blog from "../components/Blog.astro";
     margin-bottom: var(--space-xl);
   }
 
-  @media (hover: hover) {
-    .mail-link:hover {
-      font-weight: var(--font-weight-bold);
-      color: var(--accent);
-      text-decoration: none;
-      font-variation-settings: "slnt" -5;
-      transition: 0.3s ease-in-out;
-    }
+  .social-links {
+    display: flex;
+
+    gap: var(--space-xs);
+    margin-top: var(--space-l);
   }
 </style>

@@ -40,19 +40,9 @@ const { Content } = await post.render();
         <div class="content">
           <Content />
         </div>
-
-        {
-          post.data.link && (
-            <p>
-              <a href={post.data.link} target="_blank" class="out-link">
-                Link
-              </a>
-            </p>
-          )
-        }
       </div>
     </article>
-    <section>
+    <section class="blog-section">
       <Blog />
     </section>
   </main>
@@ -62,13 +52,17 @@ const { Content } = await post.render();
   article {
     margin-bottom: var(--space-2xl);
     display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: var(--space-m);
+    grid-template-columns: 2fr 2fr;
+    gap: var(--space-2xl);
   }
 
-  @media screen and (max-width: 660px) {
+  @media screen and (max-width: 800px) {
     article {
       grid-template-columns: 1fr;
+    }
+
+    .blog-section {
+      display: none;
     }
   }
 
@@ -78,5 +72,9 @@ const { Content } = await post.render();
 
   .content {
     margin: var(--space-l) 0;
+  }
+
+  .image {
+    margin-top: var(--space-xs);
   }
 </style>
