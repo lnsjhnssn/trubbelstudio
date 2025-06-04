@@ -48,9 +48,15 @@ import Blog from "../components/Blog.astro";
     /* max-width: 570px; */
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 3fr 4fr;
     gap: var(--space-s);
     margin: 0 auto;
+  }
+
+  @media screen and (max-width: 800px) {
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
   }
 
   .text-grid {
