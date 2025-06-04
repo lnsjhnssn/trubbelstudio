@@ -1,0 +1,82 @@
+---
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Layout from "../../layouts/Layout.astro";
+import Blog from "../../components/Blog.astro";
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title_english}>
+  <main>
+    <article>
+      <div>
+        {
+          post.data.cover && (
+            <Image
+              class="image"
+              src={post.data.cover}
+              alt={post.data.coverAlt || post.data.title_english}
+            />
+          )
+        }
+      </div>
+      <div>
+        <h1>{post.data.title_english}</h1>
+        <p class="date">
+          <FormattedDate date={post.data.pubDate} />
+        </p>
+        <div class="content">
+          <Content />
+        </div>
+
+        {
+          post.data.link && (
+            <p>
+              <a href={post.data.link} target="_blank">
+                {post.data.link}
+              </a>
+            </p>
+          )
+        }
+      </div>
+    </article>
+    <section>
+      <Blog />
+    </section>
+  </main>
+</Layout>
+
+<style>
+  article {
+    margin-bottom: var(--space-2xl);
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: var(--space-m);
+  }
+
+  @media screen and (max-width: 660px) {
+    article {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .date {
+    margin-top: 0;
+  }
+
+  .content {
+    margin: var(--space-l) 0;
+  }
+</style>

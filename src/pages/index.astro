@@ -1,23 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 import Blog from "../components/Blog.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
   <main>
     <div class="subtitle">
-      <p>creative technologist from sweden, currently living in geneva.</p>
       <p>
-        I design and develop websites • I create and mix sound • +10 years as
-        sound designer and engineer for theatre and dance • makes music with old
-        amica and folkvang • speaks english, french, swedish
+        Creative technologist from Norrbotten, Sweden. Currently living in
+        Geneva, Switzerland
       </p>
-
+      <p>I design and develop websites. I make and mix sound.</p>
       <p>
-        get in touch: <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
+        Get in touch: <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
           >lnsjhnssn@gmail.com</a
         >
       </p>
@@ -32,8 +28,8 @@ import Blog from "../components/Blog.astro";
 
 <style>
   .subtitle {
-    margin: var(--space-xl) 0;
     max-width: 570px;
+    margin-bottom: var(--space-xl);
   }
 
   @media (hover: hover) {

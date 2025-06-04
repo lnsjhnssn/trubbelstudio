@@ -8,3 +8,5 @@ link: https://norrlandsoperan.se/
 cover: NO_Fasad.png
 coverAlt: Photo of the building of Norrlandsoperan in Umeå.
 ---
+
+Made sound and led technical production and coordination for touring theatre productions, contemporary dance and music performances 2016 - 2020.
