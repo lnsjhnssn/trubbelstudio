@@ -4,6 +4,7 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import Layout from "../../layouts/Layout.astro";
 import Blog from "../../components/Blog.astro";
 import { Image } from "astro:assets";
+import NavbarProjects from "../../components/NavbarProjects.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -19,6 +20,7 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title_english}>
+  <NavbarProjects />
   <main>
     <article>
       <div>

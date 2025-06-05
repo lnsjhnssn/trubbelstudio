@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
+import NavbarProjects from "../components/NavbarProjects.astro";
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
 import Blog from "../components/Blog.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
+  <NavbarProjects />
   <main>
     <div class="grid-2">
       <div class="text-grid">

@@ -42,10 +42,6 @@ nav {
   padding: 0 var(--space-m);
 }
 
-nav {
-  margin-bottom: var(--space-xl);
-}
-
 strong {
   font-weight: var(--font-weight-bold);
 }
