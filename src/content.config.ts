@@ -17,6 +17,7 @@ const blog = defineCollection({
       link: z.string().optional(),
       cover: image().optional().nullable(),
       coverAlt: z.string().optional().nullable(),
+      subtitle: z.string().optional().nullable(),
     }),
 });
 

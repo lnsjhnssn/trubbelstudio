@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import FormattedDate from "../../components/FormattedDate.astro";
+
 import Layout from "../../layouts/Layout.astro";
 import Blog from "../../components/Blog.astro";
 import { Image } from "astro:assets";
@@ -36,9 +36,8 @@ const { Content } = await post.render();
       </div>
       <div>
         <h1>{post.data.title_english}</h1>
-        <p class="date">
-          <FormattedDate date={post.data.pubDate} />
-        </p>
+
+        <p class="subtitle">{post.data.subtitle}</p>
         <div class="content">
           <Content />
         </div>
@@ -64,8 +63,8 @@ const { Content } = await post.render();
     }
   }
 
-  .date {
-    margin-top: 0;
+  .subtitle {
+    color: var(--gray-7);
   }
 
   .content {

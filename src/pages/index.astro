@@ -9,12 +9,11 @@ import SocialLinks from "../components/SocialLinks.astro";
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
   <NavbarHome />
   <main>
-    <div class="subtitle">
+    <div class="header">
       <h1>Hejsan, I'm Linus.</h1>
-      <p>
-        Web Developer & Sound Designer from Norrbotten, Sweden.
-        <br />
-        Living in Geneva, Switzerland.
+      <p class="subtitle">
+        Web Developer & Sound Designer from Norrbotten, Sweden. Living in
+        Geneva, Switzerland.
       </p>
       <p>
         I am available for work. Get in touch:
@@ -34,7 +33,7 @@ import SocialLinks from "../components/SocialLinks.astro";
 </Layout>
 
 <style>
-  .subtitle {
+  .header {
     max-width: 570px;
     margin-bottom: var(--space-xl);
   }
@@ -43,6 +42,9 @@ import SocialLinks from "../components/SocialLinks.astro";
     display: flex;
     gap: var(--space-xs);
     margin-top: var(--space-l);
+  }
+  .subtitle {
+    max-width: 520px;
   }
 
   @media screen and (min-width: 689px) {

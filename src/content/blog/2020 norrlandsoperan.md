@@ -1,12 +1,13 @@
 ---
-title_english: Sound Technician & Stage Manager
-titre_francais: Sound Technician & Stage Manager
-description_english: Made sound and led technical production and coordination for touring theatre productions, contemporary dance and music performances 2016 - 2020.
-description_francais: Made sound and led technical production and coordination for touring theatre productions, contemporary dance and music performances 2016 - 2020.
-pubDate: "December 31 2019"
+title_english: Norrlandsoperan
+titre_francais: Norrlandsoperan
+subtitle: "2016-2019 | Sound Engineer | Performing Arts"
+description_english: Sound design for the performance at Norrlandsoperan.
+description_francais: Design sonore pour la performance à Norrlandsoperan.
+pubDate: "Dec 31 2019"
 link: https://norrlandsoperan.se/
-cover: NO_Fasad.png
-coverAlt: Photo of the building of Norrlandsoperan in Umeå.
+cover: "./NO_Fasad.png"
+coverAlt: "Photo from the performance at Norrlandsoperan"
 ---
 
 From 2016 to the end of 2019, I was employed at Norrlandsoperan in Umeå. It is a multidisciplinary venue featuring opera, dance, symphonic concerts, and contemporary art, with four stages and two of them with up to 500 seats.

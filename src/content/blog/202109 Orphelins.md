@@ -1,19 +1,15 @@
 ---
-title_english: Sound Engineer – Orphelins (2021–2022)
-titre_francais: Sound Engineer – Orphelins (2021–2022)
-description_english: Sound and Stage manager for the theatre piece Orphelins by Philippe Saire.
-description_francais: Sound and Stage manager for the theatre piece Orphelins by Philippe Saire.
-pubDate: "Sep 30 2021"
+title_english: Orphelins
+titre_francais: Orphelins
+description_english: Sound design for the performance Orphelins.
+description_francais: Design sonore pour la performance Orphelins.
+pubDate: "Sept 24 2021"
 link: https://www.philippesaire.ch/en/projets/orphelins
-cover: "orphelins.png"
-coverAlt: Image of two persons and the text Cie Philippe Saire, Orhelins de Dennis Kelly
+cover: "./orphelins.jpg"
+coverAlt: "Photo from the performance Orphelins"
+subtitle: "2021-2022 | Sound Engineer, Stage Manager | Theatre"
 ---
 
-**Role:** Sound Engineer  
-**Company:** Cie Philippe Saire
+After successfully taking on Tony Kushner’s play Angels in America, choreographer Philippe Saire tackles Dennis Kelly’s Orphans, which deals with issues of societal division, racism and family ties. In this electrically-paced play, which oscillates between psychological thriller, tragedy and black comedy, the author explores the theme of violence in the contemporary urban world. The judgement of the characters is ever-changing, subtle and unsettling. Victim? Accomplice? Guilty? Our certainties are shattered and raise the dizzying question: how far are we willing to go to protect our loved ones? Orphans does not offer a ready-made answer, but rather refers us to our internal capacity to face the intolerable.
 
-I worked as **sound engineer** on _Orphelins_, a theatrical piece directed and choreographed by **Philippe Saire**, based on the play _Orphans_ by **Dennis Kelly**.
-
-Premiere: September 2021 – Arsenic, Lausanne  
-Sound Design: Jérémy Conne  
-Direction: Philippe Saire
+**Premiere:** September 2021 – Arsenic, Lausanne. **Sound Design:** Jérémy Conne. **Direction:** Philippe Saire. **Based on the play Orphans by Dennis Kelly.**
