@@ -1,13 +1,14 @@
 ---
-title_english: Old Amica - För alltid
-description_english: Old Amica - För alltid
-titre_francais: För alltid
-description_francais: Old Amica - För alltid
-pubDate: "August 9 2024"
+title: Old Amica - För alltid
+description: Old Amica - För alltid
+
+pubDate: "2024-08-09"
 link: https://oldamica.bandcamp.com/album/f-r-alltid
 cover: "./oldamica/for-alltid.jpg"
 coverAlt: "Cover"
 subtitle: "2024 | Music | Album"
+tags:
+  - music
 ---
 
 **För alltid** is an album about time. The fuzzy & shapeless memories floating without coherence. Shortwave radio recordings picking up unbroken codes from the past. Hopeful voices whispering about a possible future from a hopeless now.

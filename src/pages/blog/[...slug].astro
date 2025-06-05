@@ -19,7 +19,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
-<Layout title={post.data.title_english}>
+<Layout title={post.data.title}>
   <NavbarProjects />
   <main>
     <article>
@@ -29,7 +29,7 @@ const { Content } = await post.render();
             <Image
               class="image"
               src={post.data.cover}
-              alt={post.data.coverAlt || post.data.title_english}
+              alt={post.data.coverAlt || post.data.title}
             />
           )
         }
@@ -39,7 +39,7 @@ const { Content } = await post.render();
       </div>
 
       <div>
-        <h1>{post.data.title_english}</h1>
+        <h1>{post.data.title}</h1>
 
         <p class="subtitle">{post.data.subtitle}</p>
         <div class="content">

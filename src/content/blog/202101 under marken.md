@@ -1,14 +1,15 @@
 ---
-title_english: Under marken
-titre_francais: Under marken
-description_english: Sound art, music and installation. Exhibition together with the writer Andrea Lungren and the artist Helena Wikström. Premiered at Gallery Syster in Luleå 2021.
-description_francais: Sound art, music and installation. Exhibition together with the writer Andrea Lungren and the artist Helena Wikström. Premiered at Gallery Syster in Luleå 2021.
+title: Under marken
+description: Sound art, music and installation. Exhibition together with the writer Andrea Lungren and the artist Helena Wikström. Premiered at Gallery Syster in Luleå 2021.
 subtitle: "2021 | Sound Artist, Co-Creator | Exhibition"
-pubDate: "Mars 19 2021"
+pubDate: "2021-03-19"
 link: https://www.helenawikstrom.com/under-marken
 cover: "./undermarken_©helena_wikstrom.png"
 coverAlt: "Photo from the exhibition Under marken"
 imageCopyright: "© Helena Wikström"
+tags:
+  - music
+  - sound
 ---
 
 I collaborated with artist Helena Wikström and writer Andrea Lundgren on Under marken, a multidisciplinary installation presented at Galleri Syster as part of their SamArtBete project series.

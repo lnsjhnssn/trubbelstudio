@@ -1,13 +1,15 @@
 ---
-title_english: Website for Atelier Tentatif
-titre_francais: Website for Atelier Tentatif
-description_english: Sound design for the performance Atelier Tentatif.
-description_francais: Design sonore pour la performance Atelier Tentatif.
-pubDate: "May 24 2024"
+title: Website for Atelier Tentatif
+
+description: Sound design for the performance Atelier Tentatif.
+
+pubDate: "2024-05-24"
 link: https://ateliertentatif.ch
 cover: "./ateliertentatif.png"
 coverAlt: "Photo from the performance Atelier Tentatif"
 subtitle: "2024 | Web Design & Development, CMS Integration | Website"
+tags:
+  - web
 ---
 
 Designed and developed the official website for Atelier Tentatif, a theatre company that creates site-specific performances inspired by nature, aimed at engaging both children and adults in reflecting on our relationship with the natural world.

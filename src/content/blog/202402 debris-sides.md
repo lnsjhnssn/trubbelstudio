@@ -1,13 +1,14 @@
 ---
-title_english: Old Amica - Debris Sides
-description_english: Old Amica - Debris Sides
-titre_francais: Old Amica - Debris Sides
-description_francais: Old Amica - Debris Sides
-pubDate: "February 16 2024"
+title: Old Amica - Debris Sides
+description: Old Amica - Debris Sides
+
+pubDate: "2024-02-06"
 link: https://oldamica.bandcamp.com/album/debris-sides
 cover: "./oldamica/debris-sides.jpg"
 coverAlt: "Cover"
 subtitle: "2024 | Music | EP"
+tags:
+  - music
 ---
 
 Written, recorded and mixed by **Old Amica** in 2011. Mastered by **James Armstrong**. Cover art by **Björn Kleinhenz**.

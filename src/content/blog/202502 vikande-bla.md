@@ -1,14 +1,15 @@
 ---
-title_english: Old Amica / Aiko Takahashi EP
-description_english: Split cassette ep "Vikande blå / Nuages". Release on Handstitched Records 7 march 2025.
-titre_francais: Old Amica / Aiko Takahashi [split ep]
-description_francais: Split cassette ep "Vikande blå / Nuages". Handstitched Records le 7 mars 2025.
-pubDate: "Feb 27 2025"
+title: Old Amica / Aiko Takahashi EP
+description: Split cassette ep "Vikande blå / Nuages". Release on Handstitched Records 7 march 2025.
+
+pubDate: "2025-02-27"
 link: https://handstitched.bandcamp.com/album/vikande-bl-nuages
 cover: "./vikandebla.jpg"
 coverAlt: "Photo from the performance Vikande blå"
 subtitle: "2025 | Music | EP"
 imageCopyright: "© Handstitched Records"
+tags:
+  - music
 ---
 
 **"Vikande blå" & "Nuages"** is issued on dual-format, limited edition tape and mini double CD featuring individually hand-bound and hand-cut collage CD wallets made from vintage materials, washi tape and papers, a special print edition of four unique designs for the [tape] O-cards to house the c45 cassettes. Each CD copy is hand-numbered and packed inside glassine bags, tape copies are packed inside a clear eco bag.
