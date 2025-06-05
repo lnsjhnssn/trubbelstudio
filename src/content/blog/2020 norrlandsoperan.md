@@ -4,7 +4,7 @@ titre_francais: Norrlandsoperan
 subtitle: "2016-2019 | Sound Technician, Stage Technician | Performing Arts"
 description_english: Sound design for the performance at Norrlandsoperan.
 description_francais: Design sonore pour la performance à Norrlandsoperan.
-pubDate: "Dec 31 2019"
+pubDate: "Dec 01 2019"
 link: https://norrlandsoperan.se/
 cover: "./NO_Fasad.png"
 coverAlt: "Photo from the performance at Norrlandsoperan"
