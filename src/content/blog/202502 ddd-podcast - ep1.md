@@ -3,7 +3,7 @@ title_english: ddd - Podcast series
 titre_francais: ddd - Podcast series
 description_english: Sound design for the ddd podcast episode 1.
 description_francais: Design sonore pour le podcast ddd épisode 1.
-pubDate: "Feb 24 2025"
+pubDate: "Feb 19 2025"
 link: https://avdc-ddd.ch/resources/podcasts/
 cover: "./ddd-podcast.png"
 coverAlt: "Photo from the ddd podcast episode 1"

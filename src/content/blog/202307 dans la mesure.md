@@ -3,7 +3,7 @@ title_english: Dans la mesure de l'impossible
 titre_francais: Dans la mesure de l'impossible
 description_english: Sound design for the performance Dans la mesure.
 description_francais: Design sonore pour la performance Dans la mesure.
-pubDate: "July 24 2024"
+pubDate: "July 24 2023"
 link: https://www.comedie.ch/fr/dans-la-mesure-de-limpossible-productions
 cover: "./dmdli.jpeg"
 coverAlt: "Photo from the performance Dans la mesure"

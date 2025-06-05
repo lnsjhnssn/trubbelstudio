@@ -1,7 +1,7 @@
 ---
 title_english: Norrlandsoperan
 titre_francais: Norrlandsoperan
-subtitle: "2016-2019 | Sound Engineer | Performing Arts"
+subtitle: "2016-2019 | Sound Technician, Stage Technician | Performing Arts"
 description_english: Sound design for the performance at Norrlandsoperan.
 description_francais: Design sonore pour la performance à Norrlandsoperan.
 pubDate: "Dec 31 2019"
