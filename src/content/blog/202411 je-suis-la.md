@@ -5,7 +5,7 @@ titre_francais: Je suis là
 description_francais: Design sonore pour la performance Je suis là.
 pubDate: "Nov 24 2024"
 link: https://www.amstramgram.ch/fr/programme/je-suis-la
-cover: "./jesuisla2.png"
+cover: "./jesuisla2.jpg"
 coverAlt: "Photo from the performance Je suis là"
 subtitle: "2024 | Sound Design | Theatre"
 imageCopyright: "© Ariane Catton Balabeau"
