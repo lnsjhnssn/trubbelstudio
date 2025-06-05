@@ -1,13 +1,15 @@
 ---
-title_english: ddd - Podcast series
-titre_francais: ddd - Podcast series
-description_english: Sound design for the ddd podcast episode 1.
-description_francais: Design sonore pour le podcast ddd épisode 1.
-pubDate: "Feb 19 2025"
+title: ddd - Podcast series
+
+description: Sound design for the ddd podcast episode 1.
+
+pubDate: "2025-02-19"
 link: https://avdc-ddd.ch/resources/podcasts/
 cover: "./ddd-podcast.png"
 coverAlt: "Photo from the ddd podcast episode 1"
 subtitle: "2025 | Sound Editor & Mix | Podcast"
+tags:
+  - sound
 ---
 
 I handle the sound editing, mixing, and overall sound design for the podcast series ddd, an initiative by the Association Vaudoise de Danse Contemporaine (AVDC).

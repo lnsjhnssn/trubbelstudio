@@ -1,12 +1,15 @@
 ---
-title_english: Des Amours
-titre_francais: Des Amours
-description_english: Sound design for the performance Des Amours.
-description_francais: Design sonore pour la performance Des Amours.
-pubDate: "May 24 2024"
+title: Des Amours
+
+description: Sound design for the performance Des Amours.
+
+pubDate: "2024-05-22"
 cover: "./les-amours.png"
 coverAlt: "Photo from the performance Des Amours"
 subtitle: "2024 | Sound Mixing, Dialogue Editing | Film"
+tags:
+  - sound
+  - film
 ---
 
 Des amours was screened as part of the Agora Les Amours intergenerational festival at **Théâtre Am Stram Gram** (Geneva) in May 2024.

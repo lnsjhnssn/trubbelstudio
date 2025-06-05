@@ -1,14 +1,16 @@
 ---
-title_english: Je vous suis - le film
-titre_francais: Je vous suis - le film
-description_english: Sound design for the performance Je vous suis 1.
-description_francais: Design sonore pour la performance Je vous suis 1.
-pubDate: "April 24 2022"
+title: Je vous suis - le film
+description: Sound design for the performance Je vous suis 1.
+pubDate: "2022-04-22"
 subtitle: "2022 | Sound Design, Editing, Mixing | Film"
 link: https://www.arcinfo.ch/neuchatel-canton/la-chaux-de-fonds-la-biennale-decerne-son-premier-prix-a-orelie-fuchs-chen-1358819
 cover: "./je vous suis_le film.jpg"
 coverAlt: "Photo from the performance Je vous suis 1"
 imageCopyright: "© Orélie Fuchs"
+tags:
+  - music
+  - sound
+  - film
 ---
 
 "Ils sont neuf. C’est une famille. On ne sait pas toujours qui est qui. Ils.elles se mélangent. Certain.e.s ont des handicaps visibles, d’autres non. Mais en réalité, dans cette histoire, cela n’a aucune importance. Leur richesse créative prend le dessus.
