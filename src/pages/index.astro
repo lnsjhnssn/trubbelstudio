@@ -3,10 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import NavbarHome from "../components/NavbarHome.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
 import Blog from "../components/Blog.astro";
-
-import Bluesky from "../assets/images/bluesky.svg";
-import GitHub from "../assets/images/github.svg";
-import LinkedIn from "../assets/images/linkedin.com.svg";
+import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
@@ -26,27 +23,7 @@ import LinkedIn from "../assets/images/linkedin.com.svg";
         </a>
       </p>
       <div class="social-links">
-        <p>
-          <a href="https://github.com/lnsjhnssn" class="out-link">
-            <GitHub width={22} height={22} fill="currentColor" />
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://bsky.app/profile/linusjohansson.bsky.social"
-            class="out-link"
-          >
-            <Bluesky width={22} height={22} fill="currentColor" />
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://www.linkedin.com/in/linus-johansson-8000000000/"
-            class="out-link"
-          >
-            <LinkedIn width={22} height={22} fill="currentColor" />
-          </a>
-        </p>
+        <SocialLinks />
       </div>
     </div>
 

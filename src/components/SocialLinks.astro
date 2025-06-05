@@ -1,0 +1,38 @@
+---
+import Bluesky from "../assets/images/bluesky.svg";
+import GitHub from "../assets/images/github.svg";
+import LinkedIn from "../assets/images/linkedin.com.svg";
+---
+
+<div class="social-links">
+  <p>
+    <a href="https://github.com/lnsjhnssn" class="out-link">
+      <GitHub width={22} height={22} fill="currentColor" />
+    </a>
+  </p>
+  <p>
+    <a
+      href="https://bsky.app/profile/linusjohansson.bsky.social"
+      class="out-link"
+    >
+      <Bluesky width={22} height={22} fill="currentColor" />
+    </a>
+  </p>
+  <p>
+    <a
+      href="https://www.linkedin.com/in/linus-johansson-8000000000/"
+      class="out-link"
+    >
+      <LinkedIn width={22} height={22} fill="currentColor" />
+    </a>
+  </p>
+</div>
+
+<style>
+  .social-links {
+    display: flex;
+    gap: var(--space-s);
+    justify-content: center;
+    align-items: center;
+  }
+</style>
