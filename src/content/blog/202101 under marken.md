@@ -8,6 +8,7 @@ pubDate: "Mars 19 2021"
 link: https://www.helenawikstrom.com/under-marken
 cover: "./undermarken_©helena_wikstrom.png"
 coverAlt: "Photo from the exhibition Under marken"
+imageCopyright: "© Helena Wikström"
 ---
 
 I collaborated with artist Helena Wikström and writer Andrea Lundgren on Under marken, a multidisciplinary installation presented at Galleri Syster as part of their SamArtBete project series.

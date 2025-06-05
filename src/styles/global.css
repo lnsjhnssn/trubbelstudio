@@ -10,7 +10,7 @@ body {
   /* font-family: "Archivo", sans-serif; */
   /* font-family: "HEX Franklin", sans-serif; */
   /* font-family: "Roboto Flex", sans-serif; */
-  font-family: "Geist";
+
   font-family: "HEX Franklin", sans-serif;
   background: #111;
   /* background-image: url("../assets/images/nnnoise-transparent.svg"); */
@@ -120,7 +120,6 @@ img {
     font-weight: var(--font-weight-bold);
     color: var(--apple-bg);
     text-decoration: none;
-    font-variation-settings: "slnt" -5;
     transition: 0.3s ease-in-out;
     cursor: pointer;
   }
@@ -131,7 +130,6 @@ img {
     font-weight: var(--font-weight-bold);
     color: var(--apple-bg);
     text-decoration: none;
-    font-variation-settings: "slnt" -5;
     transition: 0.3s ease-in-out;
     cursor: pointer;
   }

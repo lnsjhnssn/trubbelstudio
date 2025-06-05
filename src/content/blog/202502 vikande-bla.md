@@ -8,6 +8,7 @@ link: https://handstitched.bandcamp.com/album/vikande-bl-nuages
 cover: "./vikandebla.jpg"
 coverAlt: "Photo from the performance Vikande blå"
 subtitle: "2025 | Music | EP"
+imageCopyright: "© Handstitched Records"
 ---
 
 **"Vikande blå" & "Nuages"** is issued on dual-format, limited edition tape and mini double CD featuring individually hand-bound and hand-cut collage CD wallets made from vintage materials, washi tape and papers, a special print edition of four unique designs for the [tape] O-cards to house the c45 cassettes. Each CD copy is hand-numbered and packed inside glassine bags, tape copies are packed inside a clear eco bag.

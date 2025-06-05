@@ -8,6 +8,7 @@ link: https://www.oreliefuchs.ch/spectacle/je-vous-suis-2e-latenium-ne/
 cover: "./je_vous_suis_Laténium.jpg"
 coverAlt: "Photo from the performance Je vous suis 2"
 subtitle: "2022 | Sound Design | Performance"
+imageCopyright: "© Orélie Fuchs"
 ---
 
 Je vous suis / 2e, a poetic and inclusive performance project directed by Orélie Fuchs Chen and co-created with Kilian Haselbeck and the Cie dansehabile. The project brought together eight performers for a two-week immersive residency and creation process at the museum Laténium in Neuchâtel.

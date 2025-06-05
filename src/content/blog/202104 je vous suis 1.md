@@ -8,6 +8,7 @@ subtitle: "2022 | Sound Design, Editing, Mixing | Film"
 link: https://www.arcinfo.ch/neuchatel-canton/la-chaux-de-fonds-la-biennale-decerne-son-premier-prix-a-orelie-fuchs-chen-1358819
 cover: "./je vous suis_le film.jpg"
 coverAlt: "Photo from the performance Je vous suis 1"
+imageCopyright: "© Orélie Fuchs"
 ---
 
 "Ils sont neuf. C’est une famille. On ne sait pas toujours qui est qui. Ils.elles se mélangent. Certain.e.s ont des handicaps visibles, d’autres non. Mais en réalité, dans cette histoire, cela n’a aucune importance. Leur richesse créative prend le dessus.

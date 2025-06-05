@@ -5,9 +5,10 @@ titre_francais: Je suis là
 description_francais: Design sonore pour la performance Je suis là.
 pubDate: "Nov 24 2024"
 link: https://www.amstramgram.ch/fr/programme/je-suis-la
-cover: "./jesuisla.png"
+cover: "./jesuisla2.png"
 coverAlt: "Photo from the performance Je suis là"
 subtitle: "2024 | Sound Design | Theatre"
+imageCopyright: "© Ariane Catton Balabeau"
 ---
 
 Je suis là is a piece directed by **Murielle Bechame** and produced by **Théâtre Am Stram Gram** (Geneva), within the framework of **Tapis Rouge**, a cultural integration program for young people in exile.

@@ -8,6 +8,7 @@ link: https://www.comedie.ch/fr/dans-la-mesure-de-limpossible-productions
 cover: "./dmdli.jpeg"
 coverAlt: "Photo from the performance Dans la mesure"
 subtitle: "2022-2023 | Sound Engineer and Operator | Theatre"
+imageCopyright: "© Magali Dougados"
 ---
 
 From early 2022 through the end of 2023, I did the sound for Dans la mesure de l'impossible, an international theatre production written and directed by Tiago Rodrigues and produced by the Comédie de Genève. The piece, performed in French, English, and Portuguese, draws from real-life interviews with humanitarian workers to explore the ethical and emotional dilemmas they face, navigating between zones of crisis and life at home.
