@@ -1,0 +1,71 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+import Menu from "./Menu.astro";
+interface Props {
+  title?: string;
+}
+
+const { title = "trubbelstudio" } = Astro.props;
+
+// Get current path for active link styling
+const currentPath = Astro.url.pathname;
+
+// Function to check if a link should be active
+const isActive = (path: string) => {
+  if (path === "/" && (currentPath === "/" || currentPath === "")) return true;
+  if (path === "/work/all" && currentPath.startsWith("/work/")) return true;
+  return currentPath === path;
+};
+---
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <ul class="menu">
+      <li>
+        <a href="/" class={isActive("/") ? "display-none" : ""}>Home</a>
+      </li>
+      <li>
+        <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
+      </li>
+      <li>
+        <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
+          >Work</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: end;
+    margin: var(--space-xl) 0;
+    line-height: 1;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-m);
+    justify-content: end;
+    align-items: start;
+  }
+
+  .menu a {
+    text-decoration: none;
+  }
+
+  .menu a.active {
+    font-weight: bold;
+    color: var(--obsidian-accent);
+  }
+
+  .display-none {
+    display: none;
+  }
+</style>

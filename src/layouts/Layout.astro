@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import "../styles/fonts.css";
 import { ClientRouter } from "astro:transitions";
+import Navbar from "../components/Navbar.astro";
 // import FooterSocialLinks from "../components/FooterSocialLinks.astro";
 
 interface Props {
@@ -25,7 +26,9 @@ const {
     <title>{title}</title>
     <ClientRouter />
   </head>
+
   <body>
+    <Navbar />
     <slot />
     <!-- <FooterSocialLinks /> -->
   </body>

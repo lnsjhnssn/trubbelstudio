@@ -1,0 +1,167 @@
+---
+import { Image } from "astro:assets";
+import FormattedDate from "./FormattedDate.astro";
+import { getCollection } from "astro:content";
+
+interface Props {
+  tag?: string;
+}
+
+const { tag } = Astro.props;
+const allWorkPosts = await getCollection("work");
+const filteredPosts = tag
+  ? allWorkPosts.filter((post) => post.data.tags?.includes(tag))
+  : allWorkPosts;
+const sortedPosts = filteredPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+// Get current path for active link styling
+const currentPath = Astro.url.pathname;
+
+// Function to check if a link should be active
+const isActive = (path: string) => {
+  if (path === "/work/web" && currentPath === "/") return true;
+  return currentPath === path;
+};
+---
+
+<div class="work-header">
+  <h2>Some of the things I've done</h2>
+
+  <div class="work-header-links">
+    <span class="filter-text">Filter:</span>
+    <a href="/work/web" class={isActive("/work/web") ? "active" : ""}>Web</a>
+    <a href="/work/sound" class={isActive("/work/sound") ? "active" : ""}
+      >Sound</a
+    >
+    <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
+      >Show All</a
+    >
+  </div>
+</div>
+
+<ul class="work-list">
+  {
+    sortedPosts.map((post) => (
+      <li>
+        <div class="card">
+          <div>
+            <a href={`/work/${post.slug}`} class="image-link" data-tag={tag}>
+              {post.data.cover && (
+                <Image
+                  class="image"
+                  src={post.data.cover}
+                  alt={post.data.coverAlt || post.data.title}
+                />
+              )}
+            </a>
+          </div>
+
+          <div>
+            <h3>{post.data.title}</h3>
+            <p class="subtitle">{post.data.subtitle}</p>
+          </div>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<script>
+  // Store the current filter in history state
+  document.addEventListener("DOMContentLoaded", () => {
+    const currentPath = window.location.pathname;
+    const filter = currentPath.split("/").pop();
+
+    // Store the filter in history state
+    window.history.replaceState({ filter }, "", currentPath);
+
+    // Handle clicks on work items
+    const links = document.querySelectorAll(".image-link");
+    links.forEach((link) => {
+      link.addEventListener("click", (e) => {
+        const tag = link.getAttribute("data-tag");
+        if (tag) {
+          window.history.pushState({ filter: tag }, "", link.href);
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .work-list {
+    margin: 0 auto;
+  }
+
+  .work-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .work-header-links {
+    display: flex;
+    gap: var(--space-s);
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-xl);
+    font-size: var(--step-0);
+  }
+
+  .card {
+    padding-bottom: var(--space-xl);
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    gap: var(--space-l);
+    width: 100%;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .image:hover {
+    border: 5px solid var(--apple-bg);
+  }
+
+  .date {
+    margin-bottom: var(--space-3xs) 0;
+    color: var(--mist-text);
+    font-size: var(--step--1);
+  }
+
+  .work-header-links a {
+    text-decoration: none;
+  }
+
+  .filter-text {
+    color: var(--text-secondary);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .work-header-links a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .content {
+    margin-top: var(--space-s);
+    color: var(--text-secondary);
+    font-size: var(--step--1);
+    line-height: 1.5;
+  }
+
+  .content :global(p) {
+    margin: 0;
+  }
+
+  .subtitle {
+    color: var(--text-secondary);
+  }
+</style>

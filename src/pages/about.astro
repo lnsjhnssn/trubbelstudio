@@ -1,18 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
-import NavbarProjects from "../components/NavbarProjects.astro";
+
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
-import Blog from "../components/Blog.astro";
+import LinusImage from "../assets/images/linus_johansson_riihimaki.png";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
-  <NavbarProjects />
   <main>
+    <div class="page-header">
+      <h1 class="page-title">About me</h1>
+    </div>
     <div class="grid-2">
       <div class="text-grid">
-        <h1 class="page-title">About</h1>
         <p>
           After finishing a <strong
             >Bachelor of Science in Information Sciences</strong
@@ -52,7 +53,14 @@ import Blog from "../components/Blog.astro";
           >
         </p>
       </div>
-      <div class="image-grid"></div>
+      <div class="image-grid">
+        <Image
+          src={LinusImage}
+          alt="Close up of Linus Johansson on a field in Portugal"
+          width={300}
+          class="image-about"
+        />
+      </div>
     </div>
   </main>
 
@@ -62,7 +70,7 @@ import Blog from "../components/Blog.astro";
       /* max-width: 570px; */
       text-align: left;
       display: grid;
-      grid-template-columns: 3fr 4fr;
+      grid-template-columns: 7fr 5fr;
       gap: var(--space-s);
       margin: 0 auto;
       padding-bottom: var(--space-xl);
@@ -74,7 +82,8 @@ import Blog from "../components/Blog.astro";
       }
     }
 
-    .text-grid {
+    .image-grid {
+      justify-self: end;
     }
   </style>
 </Layout>

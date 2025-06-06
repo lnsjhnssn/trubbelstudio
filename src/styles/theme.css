@@ -44,7 +44,7 @@
   --radius-full: 9999px;
 
   /* Font weights */
-  --font-weight-normal: 380;
+  --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
 
@@ -69,6 +69,7 @@
   --apple-bg: #5ad14c;
   --apple-text: rgb(62, 23, 68);
   --sky-bg: #abd8d8;
+  --sky-bg2: #abd8d845;
   --sky-text: rgb(105, 114, 171);
   --sand-bg: #e6d4af;
   --sand-text: rgb(58, 80, 101);
@@ -96,4 +97,11 @@
   --lynn-text: rgb(61, 243, 194);
   --lynn-bg: rgb(66, 0, 90);
   --lynn-bg2: hsl(284, 100%, 5%);
+
+  --obsidian-accent: #855cf5;
+
+  --accent-text: var(--obsidian-accent);
+
+  --text-secondary: var(--gray-11);
+  --text-primary: var(--gray-12);
 }
