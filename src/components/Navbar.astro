@@ -15,7 +15,7 @@ const isActive = (path: string) => {
   // For home page
   if (path === "/" && (currentPath === "/" || currentPath === "")) return true;
   // For about page
-  if (path === "/about" && currentPath === "/about") return true;
+  if (path === "/about" && currentPath.startsWith("/about")) return true;
   // For work pages
   if (path === "/work/all" && currentPath.startsWith("/work/")) return true;
   return false;

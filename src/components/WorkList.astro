@@ -21,9 +21,10 @@ const currentPath = Astro.url.pathname;
 
 // Function to check if a link should be active
 const isActive = (path: string) => {
-  if (path === "/work/web" && currentPath === "/work/web") return true;
-  if (path === "/work/sound" && currentPath === "/work/sound") return true;
-  if (path === "/work/all" && currentPath === "/work/all") return true;
+  if (path === "/work/web" && currentPath.startsWith("/work/web")) return true;
+  if (path === "/work/sound" && currentPath.startsWith("/work/sound"))
+    return true;
+  if (path === "/work/all" && currentPath.startsWith("/work/all")) return true;
   return false;
 };
 ---
@@ -120,6 +121,13 @@ const isActive = (path: string) => {
     width: 100%;
   }
 
+  @media screen and (max-width: 760px) {
+    .card {
+      grid-template-columns: 1fr;
+      gap: var(--space-l);
+    }
+  }
+
   .image {
     max-width: 100%;
     height: auto;
@@ -165,9 +173,5 @@ const isActive = (path: string) => {
 
   .subtitle {
     color: var(--text-secondary);
-  }
-
-  .image {
-    margin-top: var(--space-2xs);
   }
 </style>

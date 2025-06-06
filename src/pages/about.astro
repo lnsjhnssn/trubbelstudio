@@ -20,7 +20,7 @@ import LinusImage from "../assets/images/linus_johansson_riihimaki.png";
           > at Umeå University, a year studying <strong>Music for Cinema</strong
           > at Stockholm University, and a course in <strong
             >Electric Engineering</strong
-          > at Mittuniversitet, I’ve been moving between <strong
+          > at Mittuniversitet, I've been moving between <strong
             >creating sound and music</strong
           > for theatre, dance and movies, and <strong
             >creating websites.</strong
@@ -31,18 +31,18 @@ import LinusImage from "../assets/images/linus_johansson_riihimaki.png";
             >Fullstack Developer Program at Altcademy</strong
           > to develop my coding skills and seek more opportunities in <strong
             >web design and development.</strong
-          > I’ve been working in <strong>HTML, CSS, and JavaScript</strong> since
-          I was a teenager (remember Dreamweaver or tweaking your friend’s MySpace
-          profile?) and in my theatre work I’ve done some coding with <strong
+          > I've been working in <strong>HTML, CSS, and JavaScript</strong> since
+          I was a teenager (remember Dreamweaver or tweaking your friend's MySpace
+          profile?) and in my theatre work I've done some coding with <strong
             >MAX/MSP</strong
-          >. But it wasn’t until recently that I decided to seriously invest in
+          >. But it wasn't until recently that I decided to seriously invest in
           becoming a web designer and developer by learning the tools and
           frameworks people use today. Like <strong
             >React, TypeScript, Tailwind CSS, Figma, Astro, Ruby on Rails</strong
           >, and more.
         </p>
         <p>
-          If you’re looking for a <strong>developer</strong> for your next website
+          If you're looking for a <strong>developer</strong> for your next website
           or app, or a <strong>sound designer</strong> or
           <strong>mixer</strong> for your next project, get in touch.
         </p>
@@ -67,7 +67,6 @@ import LinusImage from "../assets/images/linus_johansson_riihimaki.png";
   <style>
     .grid-2 {
       margin: var(--space-xl) 0;
-      /* max-width: 570px; */
       text-align: left;
       display: grid;
       grid-template-columns: 7fr 5fr;
@@ -76,9 +75,19 @@ import LinusImage from "../assets/images/linus_johansson_riihimaki.png";
       padding-bottom: var(--space-xl);
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 720px) {
       .grid-2 {
         grid-template-columns: 1fr;
+      }
+
+      .image-grid {
+        order: -1;
+        width: 100%;
+      }
+
+      .image-about {
+        /* width: 100%; */
+        margin-bottom: var(--space-m);
       }
     }
 

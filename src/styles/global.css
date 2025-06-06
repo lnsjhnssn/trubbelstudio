@@ -98,7 +98,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 2px;
-  border-radius: var(--space-xs);
+  /* border-radius: var(--space-xs); */
 }
 
 @media (max-width: 720px) {
