@@ -62,8 +62,10 @@ const isActive = (path: string) => {
           </div>
 
           <div>
-            <h3>{post.data.title}</h3>
-            <p class="subtitle">{post.data.subtitle}</p>
+            <a href={`/work/${post.slug}`} data-tag={tag} class="text-link">
+              <h3>{post.data.title}</h3>
+              <p class="subtitle">{post.data.subtitle}</p>
+            </a>
           </div>
         </div>
       </li>
@@ -121,19 +123,13 @@ const isActive = (path: string) => {
     width: 100%;
   }
 
-  @media screen and (max-width: 760px) {
-    .card {
-      grid-template-columns: 1fr;
-      gap: var(--space-l);
-    }
-  }
-
   .image {
     max-width: 100%;
     height: auto;
     display: block;
     aspect-ratio: 1/1;
     object-fit: cover;
+    margin-top: var(--space-2xs);
   }
 
   .image:hover {
@@ -173,5 +169,15 @@ const isActive = (path: string) => {
 
   .subtitle {
     color: var(--text-secondary);
+  }
+
+  .text-link {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+  .text-link:hover {
+    text-decoration: none;
+    font-weight: normal;
   }
 </style>
