@@ -2,12 +2,11 @@
 import { getCollection } from "astro:content";
 
 import Layout from "../../layouts/Layout.astro";
-import Blog from "../../components/Blog.astro";
+import WorkList from "../../components/WorkList.astro";
 import { Image } from "astro:assets";
-import NavbarProjects from "../../components/NavbarProjects.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("work");
 
   return posts.map((post) => ({
     params: { slug: post.slug },
@@ -17,11 +16,17 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+// Get the tag from URL parameters and construct the back URL
+const tag = Astro.url.searchParams.get("tag");
+const backUrl = tag ? `/work/${tag}` : "/work/all";
 ---
 
 <Layout title={post.data.title}>
-  <NavbarProjects />
   <main>
+    <div class="go-back">
+      <a href="javascript:history.back()" class="back-link">← Go back</a>
+    </div>
     <article>
       <div>
         {
@@ -38,7 +43,7 @@ const { Content } = await post.render();
         </p>
       </div>
 
-      <div>
+      <div class="text-container">
         <h1>{post.data.title}</h1>
 
         <p class="subtitle">{post.data.subtitle}</p>
@@ -47,41 +52,67 @@ const { Content } = await post.render();
         </div>
       </div>
     </article>
-    <section class="blog-section">
-      <Blog />
-    </section>
   </main>
 </Layout>
+
+<script>
+  // Handle back button
+  document.addEventListener("DOMContentLoaded", () => {
+    const backLink = document.querySelector(".back-link");
+    if (backLink) {
+      backLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        window.history.back();
+      });
+    }
+  });
+</script>
 
 <style>
   article {
     margin-bottom: var(--space-2xl);
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 4fr 12fr;
     gap: var(--space-2xl);
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 760px) {
     article {
       grid-template-columns: 1fr;
+      gap: var(--space-l);
     }
   }
 
   .subtitle {
-    color: var(--gray-7);
+    color: var(--text-secondary);
   }
 
   .content {
     margin: var(--space-l) 0;
   }
 
-  .image {
-    margin-top: var(--space-xs);
+  .text-container {
+    padding: 0 var(--space-3xl) 0 0;
   }
 
   .image-copyright {
     font-size: 0.8rem;
-    color: var(--gray-7);
+    color: var(--text-secondary);
     text-align: right;
+  }
+
+  .image {
+    margin-top: var(--space-xs);
+  }
+
+  .back-link {
+    text-decoration: none;
+    color: var(--text-color);
+    display: inline-block;
+    margin-bottom: var(--space-xl);
+  }
+
+  .back-link:hover {
+    color: var(--obsidian-accent);
   }
 </style>

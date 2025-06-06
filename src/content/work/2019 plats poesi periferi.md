@@ -3,12 +3,13 @@ title: Plats. Poesi. Periferi. by Jonas Börjesson
 description: Plats. Poesi. Periferi. by Jonas Börjesson
 pubDate: "2017-12-13"
 link: https://www.youtube.com/watch?v=_lUFUZvSWXQ
-cover: "./oldamica/plats-poesi-periferi.jpeg"
+cover: "oldamica/plats-poesi-periferi.jpeg"
 coverAlt: "Cover"
 subtitle: "2017 | Original Soundtrack | Documentary"
 tags:
   - music
   - film
+  - sound
 ---
 
 Filmmaker **Jonas Börjesson**, from Halmstad, followed the poetry residency **Place. Poetry. Periphery.**, creating a poetic film inspired by its themes. The film features poets Jun Feng / Jimbut, Åsa Maria Kraft, Morten Langeland, Jonas Rolsted, Heidi von Wright, and Helena Österlund.

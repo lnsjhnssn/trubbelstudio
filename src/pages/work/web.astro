@@ -1,0 +1,51 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import NavbarHome from "../../components/NavbarHome.astro";
+import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../../consts";
+import WorkList from "../../components/WorkList.astro";
+import SocialLinks from "../../components/SocialLinks.astro";
+import { Image } from "astro:assets";
+import SiteHeader from "../../components/SiteHeader.astro";
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
+  <!-- <NavbarHome /> -->
+  <main>
+    <section>
+      <WorkList tag="web" />
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .header {
+    max-width: 570px;
+    margin-bottom: var(--space-xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .social-links {
+    display: flex;
+    gap: var(--space-xs);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-3xl);
+  }
+  .subtitle {
+    max-width: 520px;
+  }
+
+  /* @media screen and (min-width: 689px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-2xl);
+    }
+  } */
+
+  h1 {
+    font-size: var(--step-0);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+</style>

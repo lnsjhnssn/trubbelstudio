@@ -7,7 +7,7 @@ pubDate: "2024-05-24"
 link: https://ateliertentatif.ch
 cover: "./ateliertentatif.png"
 coverAlt: "Photo from the performance Atelier Tentatif"
-subtitle: "2024 | Web Design & Development, CMS Integration | Website"
+subtitle: "2024 | Web Design & Development | Website"
 tags:
   - web
 ---
