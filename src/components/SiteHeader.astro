@@ -8,8 +8,12 @@ import linus from "../assets/images/linus-with-plant.jpg";
   <div class="header-text">
     <h1>Hejsan, my name is Linus.</h1>
     <p class="subtitle">
-      I'm a Web Developer / Sound Designer / Creative Technologist from
-      Norrbotten, Sweden. Living in Geneva, Switzerland.
+      I'm a Web Developer and Sound Designer from Norrbotten, Sweden. Living in
+      Geneva, Switzerland. <a href="/about" class="in-link"
+        >Learn more about me</a
+      > and some <a href="/work/web" class="in-link"
+        >Projects I've worked on →</a
+      >
     </p>
 
     <p>
@@ -29,7 +33,6 @@ import linus from "../assets/images/linus-with-plant.jpg";
         src={linus}
         alt="Me holding a plant, hiding behind a leaf."
       />
-      <p class="image-caption">Me holding a plant.</p>
     </div>
   </div>
 </div>
@@ -54,7 +57,7 @@ import linus from "../assets/images/linus-with-plant.jpg";
   .social-links {
     display: flex;
     gap: var(--space-xs);
-    margin-top: var(--space-xl);
+    margin-top: 1.6em;
     margin-bottom: var(--space-3xl);
   }
 
@@ -68,13 +71,6 @@ import linus from "../assets/images/linus-with-plant.jpg";
     line-height: 1.5;
     margin-bottom: 1em;
     font-weight: var(--font-weight-normal);
-  }
-
-  .image-caption {
-    font-size: var(--step--1);
-    line-height: 1.5;
-    font-weight: var(--font-weight-normal);
-    text-align: end;
   }
 
   @media screen and (max-width: 689px) {

@@ -122,8 +122,8 @@ img {
 }
 
 .mail-link {
-  font-weight: var(--font-weight-bold);
-  color: var(--obsidian-accent);
+  font-weight: var(--font-weight-normal);
+  color: var(--gray-12);
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
@@ -132,6 +132,7 @@ img {
   .mail-link:hover {
     color: var(--gray-12);
     cursor: pointer;
+    color: var(--obsidian-accent);
   }
 }
 
@@ -143,6 +144,19 @@ img {
     transition: 0.3s ease-in-out;
     cursor: pointer;
   }
+}
+
+.in-link {
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: var(--obsidian-accent);
+}
+
+.in-link:hover {
+  color: var(--gray-12);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .description {

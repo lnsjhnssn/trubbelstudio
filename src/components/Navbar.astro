@@ -17,7 +17,7 @@ const isActive = (path: string) => {
   // For about page
   if (path === "/about" && currentPath.startsWith("/about")) return true;
   // For work pages
-  if (path === "/work/all" && currentPath.startsWith("/work/")) return true;
+  if (path === "/work/web" && currentPath.startsWith("/work/")) return true;
   return false;
 };
 ---
@@ -26,13 +26,13 @@ const isActive = (path: string) => {
   <div class="navbar-container">
     <ul class="menu">
       <li>
-        <a href="/" class={isActive("/") ? "" : ""}>Home</a>
+        <a href="/" class={isActive("/") ? "display-none" : ""}>Home</a>
       </li>
       <li>
         <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
       </li>
       <li>
-        <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
+        <a href="/work/web" class={isActive("/work/web") ? "active" : ""}
           >Work</a
         >
       </li>
