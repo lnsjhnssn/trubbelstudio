@@ -10,12 +10,14 @@ coverAlt: "Photo from the ddd podcast episode 1"
 subtitle: "2025 | Sound Editor & Mix | Podcast"
 tags:
   - sound
+
+published: true
 ---
 
-I handle the sound editing, mixing, and overall sound design for the podcast series ddd, an initiative by the Association Vaudoise de Danse Contemporaine (AVDC).
+Sound editing, mixing, and overall sound design for the podcast series ddd, an initiative by the Association Vaudoise de Danse Contemporaine (AVDC).
 
-This first episode, titled **"Nécessité de nouveaux récits. Comment y contribuer ?"**, was recorded during **Les Urbaines 2024** in Lausanne and features a conversation between performers **Bruta**, **isam Abad Montalvo**, and **Samir Kennedy**.
+This first episode, titled "Nécessité de nouveaux récits. Comment y contribuer ?", was recorded during Les Urbaines 2024 in Lausanne and features a conversation between performers Bruta, Samir Kennedy and isam Abad Montalvo
 
-The episode was facilitated by **Anne-Laure Sahy** and produced by **AVDC**. It marks the beginning of a series of recordings designed to share the dialogues within the ddd project.
+The episode was facilitated by Anne-Laure Sahy and produced by AVDC. It marks the beginning of a series of recordings designed to share the dialogues within the ddd project.
 
 Listen on SoundCloud: [ddd Podcast – Épisode 1](https://soundcloud.com/avdc-association-vaudoise-de-danse-contemporaine/episode-1-necessite-de-nouveaux-recits-comment-y-contribuer)

@@ -104,4 +104,6 @@
 
   --text-secondary: var(--gray-11);
   --text-primary: var(--gray-12);
+
+  --rsms-bg: color(display-p3 0.69 0.86 0.67);
 }

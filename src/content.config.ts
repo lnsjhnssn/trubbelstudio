@@ -18,6 +18,7 @@ const work = defineCollection({
       subtitle: z.string().optional().nullable(),
       imageCopyright: z.string().optional().nullable(),
       tags: z.array(z.string()).optional().nullable(),
+      published: z.boolean().default(false),
     }),
 });
 

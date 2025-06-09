@@ -12,7 +12,9 @@ body {
   /* font-family: "Roboto Flex", sans-serif; */
 
   font-family: "Inter", sans-serif;
+  /* font-family: "HEX Franklin", sans-serif; */
   /* background: var(--gray-2); */
+  background: var(--sky-bg2);
   background: var(--sky-bg2);
   color: var(--gray-12);
   font-weight: var(--font-weight-normal);
@@ -56,8 +58,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-medium);
   line-height: 1.5;
+  font-family: "HEX Franklin", sans-serif;
+  /* font-variation-settings: "wght" 400, "slnt" 0, "CASL" 0, "CRSV" 0, "MONO" 0.68; */
 }
 
 h1 {
@@ -117,12 +121,16 @@ img {
   }
 }
 
+.mail-link {
+  font-weight: var(--font-weight-bold);
+  color: var(--obsidian-accent);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
 @media (hover: hover) {
   .mail-link:hover {
-    font-weight: var(--font-weight-bold);
-    color: var(--apple-bg);
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
+    color: var(--gray-12);
     cursor: pointer;
   }
 }
@@ -130,7 +138,7 @@ img {
 @media (hover: hover) {
   .out-link:hover {
     font-weight: var(--font-weight-bold);
-    color: var(--apple-bg);
+    color: var(--obsidian-accent);
     text-decoration: none;
     transition: 0.3s ease-in-out;
     cursor: pointer;
