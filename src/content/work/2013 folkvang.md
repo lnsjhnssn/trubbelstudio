@@ -13,7 +13,7 @@ tags:
 published: true
 ---
 
-Debut album by Folkvang. Released on [Kning Disk](https://kningdisk.bandcamp.com/).
+Debut album by Folkvang. Released by [Kning Disk](https://kningdisk.bandcamp.com/).
 
 Press release: "It was one of those underground festivals out in the forest in the north of Sweden, everyone was wasted, stoned, it was close to midsummer so it never really got dark which in turn meant that the party never stopped, people everywhere, some sat around a pretty big camp fire that would pass as a bonfire if it weren’t for a young guy, one of the more odd fruits in a bowl of marginal existences, that trotted around the fire slowly wetting the ground with a hose that was attached to a tube of water that he dragged behind him. We exchanged a few words. It was worth it.
 
