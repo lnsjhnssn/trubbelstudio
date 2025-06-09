@@ -20,4 +20,4 @@ This project was a fun exercise in building an interactive UI, managing game sta
 
 GitHub: [https://github.com/lnsjhnssn/mathgame](https://github.com/lnsjhnssn/mathgame)
 <br>
-Live demo: [https://lnsjhnssn.github.io/mathgame/](https://lnsjhnssn.github.io/mathgame/)
+Live demo: [https://mathgame-10sec.netlify.app/](https://mathgame-10sec.netlify.app/)

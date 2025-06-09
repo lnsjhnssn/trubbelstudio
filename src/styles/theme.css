@@ -97,13 +97,16 @@
   --lynn-text: rgb(61, 243, 194);
   --lynn-bg: rgb(66, 0, 90);
   --lynn-bg2: hsl(284, 100%, 5%);
+  --rsms-bg: color(display-p3 0.69 0.86 0.67);
 
   --obsidian-accent: #855cf5;
 
   --accent-text: var(--obsidian-accent);
-
   --text-secondary: var(--gray-11);
   --text-primary: var(--gray-12);
 
-  --rsms-bg: color(display-p3 0.69 0.86 0.67);
+  --text-primary-dark: var(--gray-2);
+  --text-secondary-dark: var(--gray-7);
+
+  color-scheme: light dark;
 }

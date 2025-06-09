@@ -84,7 +84,7 @@ const backUrl = tag ? `/work/${tag}` : "/work/all";
   }
 
   .subtitle {
-    color: var(--text-secondary);
+    color: light-dark(var(--text-secondary), var(--text-secondary-dark));
   }
 
   .content {
@@ -103,7 +103,7 @@ const backUrl = tag ? `/work/${tag}` : "/work/all";
 
   .image-copyright {
     font-size: 0.8rem;
-    color: var(--text-secondary);
+    color: light-dark(var(--text-secondary), var(--text-secondary-dark));
     text-align: right;
   }
 
@@ -113,7 +113,7 @@ const backUrl = tag ? `/work/${tag}` : "/work/all";
 
   .back-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: light-dark(var(--text-color), var(--text-color-dark));
     display: inline-block;
     margin-bottom: var(--space-xl);
   }

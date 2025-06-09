@@ -14,9 +14,9 @@ body {
   font-family: "Inter", sans-serif;
   /* font-family: "HEX Franklin", sans-serif; */
   /* background: var(--gray-2); */
-  background: var(--sky-bg2);
-  background: var(--sky-bg2);
-  color: var(--gray-12);
+  background: light-dark(var(--sky-bg2), #111);
+
+  color: light-dark(var(--text-primary), var(--text-primary-dark));
   font-weight: var(--font-weight-normal);
   /* background-image: url("../assets/images/nnnoise-transparent.svg"); */
   background-repeat: repeat;
@@ -34,6 +34,10 @@ body {
   display: flex;
   text-rendering: optimizeLegibility;
   font-synthesis: none;
+}
+
+.text-secondary {
+  color: light-dark(var(--text-secondary), var(--text-secondary-dark));
 }
 
 main,
@@ -123,14 +127,13 @@ img {
 
 .mail-link {
   font-weight: var(--font-weight-normal);
-  color: var(--gray-12);
+
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
   .mail-link:hover {
-    color: var(--gray-12);
     cursor: pointer;
     color: var(--obsidian-accent);
   }
@@ -154,7 +157,7 @@ img {
 }
 
 .in-link:hover {
-  color: var(--gray-12);
+  color: light-dark(var(--text-primary), var(--text-primary-dark));
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
