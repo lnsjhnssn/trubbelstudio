@@ -10,11 +10,13 @@ coverAlt: "Screenshot of the math game showing a simple interface with numbers a
 subtitle: "2024 | Game Design, Web Development | Browser game"
 tags:
   - web
+
+published: true
 ---
 
-I developed a math game using vanilla HTML, CSS, and JavaScript, without any frameworks or libraries. The game challenges users to solve as many math problems as possible within a countdown timer that starts at 10 seconds. For every correct answer, a small amount of time is added and the idea is to get as many right answers as possible.
+A Game built using HTML, CSS, and vanilla JavaScript, without any frameworks or libraries. The game challenges users to solve as many math problems as possible within a countdown timer that starts at 10 seconds.
 
-This project was a fun exercise in building an interactive UI, managing game state with JavaScript, and implementing a dynamic countdown with real-time user feedback. And at the same time keeping the experience lightweight and responsive.
+This project was a fun exercise in building an interactive UI, managing game state with JavaScript, and implementing a dynamic countdown with real-time user feedback. And at the same time keeping the experience lightweight and responsive. The game is best viewed on desktop.
 
 GitHub: [https://github.com/lnsjhnssn/mathgame](https://github.com/lnsjhnssn/mathgame)
 <br>

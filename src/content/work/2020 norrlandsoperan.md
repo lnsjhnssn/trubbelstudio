@@ -9,6 +9,7 @@ coverAlt: "Photo from the performance at Norrlandsoperan"
 imageCopyright: "© Norrlandsoperan"
 tags:
   - sound
+published: false
 ---
 
 From 2016 to the end of 2019, I was employed at Norrlandsoperan in Umeå. It is a multidisciplinary venue featuring opera, dance, symphonic concerts, and contemporary art, with four stages and two of them with up to 500 seats.

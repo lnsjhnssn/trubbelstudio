@@ -10,9 +10,10 @@ subtitle: "2024 | Music | EP"
 tags:
   - music
   - sound
+published: true
 ---
 
-Written, recorded and mixed by **Old Amica** in 2011. Mastered by **James Armstrong**. Cover art by **Björn Kleinhenz**.
+Written, recorded and mixed by Old Amica in 2011. Mastered by James Armstrong. Cover art by Björn Kleinhenz.
 
 Listen on [Bandcamp](https://oldamica.bandcamp.com/album/debris-sides)
 <br>

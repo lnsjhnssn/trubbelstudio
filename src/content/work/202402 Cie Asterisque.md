@@ -9,12 +9,9 @@ coverAlt: "Screenshot of the website showing lots of small photos of different o
 subtitle: "2025 | Web Design & Development, UI/UX | Website"
 tags:
   - web
+published: true
 ---
 
-Designed and developed the official portfolio website for Orélie Fuchs, a Swiss author, visual artist, and theatre director based in Neuchâtel. Built with WordPress using the Gutenberg block editor, the site offers a flexible framework that allows Orélie to document and present her interdisciplinary work—spanning text, theatre, film, and visual art.
-
-Hosted on Infomaniak in Switzerland, it includes dedicated sections for her theatrical productions, exhibitions, visual art, and current projects, as well as a biographical page that details her artistic journey. The goal was to create an elegant and intuitive online space that bridges her written, staged, and visual work, while also serving as a practical archive and a tool for professional outreach.
-
-The site was developed in close collaboration with Orélie to ensure that the navigation, structure, and aesthetic choices remain faithful to her artistic language and values.
+Designed and developed the official portfolio website for Orélie Fuchs, a Swiss author, visual artist, and theatre director based in Neuchâtel.
 
 Visit the site: [www.oreliefuchs.ch](http://www.oreliefuchs.ch)

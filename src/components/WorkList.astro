@@ -1,6 +1,5 @@
 ---
 import { Image } from "astro:assets";
-import FormattedDate from "./FormattedDate.astro";
 import { getCollection } from "astro:content";
 
 interface Props {
@@ -9,9 +8,12 @@ interface Props {
 
 const { tag } = Astro.props;
 const allWorkPosts = await getCollection("work");
+const publishedPosts = allWorkPosts.filter(
+  (post) => post.data.published !== false
+);
 const filteredPosts = tag
-  ? allWorkPosts.filter((post) => post.data.tags?.includes(tag))
-  : allWorkPosts;
+  ? publishedPosts.filter((post) => post.data.tags?.includes(tag))
+  : publishedPosts;
 const sortedPosts = filteredPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
@@ -30,7 +32,7 @@ const isActive = (path: string) => {
 ---
 
 <div class="work-header">
-  <h2>Some of the things I've done</h2>
+  <h2>Some projects I’ve worked on</h2>
 
   <div class="work-header-links">
     <span class="filter-text">Filter:</span>
@@ -62,7 +64,7 @@ const isActive = (path: string) => {
           </div>
 
           <div>
-            <a href={`/work/${post.slug}`} data-tag={tag} class="text-link">
+            <a href={`/work/${post.slug}`} class="text-link" data-tag={tag}>
               <h3>{post.data.title}</h3>
               <p class="subtitle">{post.data.subtitle}</p>
             </a>
@@ -173,11 +175,14 @@ const isActive = (path: string) => {
 
   .text-link {
     text-decoration: none;
-    color: var(--text-color);
   }
 
-  .text-link:hover {
-    text-decoration: none;
-    font-weight: normal;
+  @media (hover: hover) {
+    .text-link:hover {
+      text-decoration: none;
+      font-weight: var(--font-weight-normal);
+      /* color: var(--obsidian-accent); */
+      transition: 0.5s ease-in-out;
+    }
   }
 </style>

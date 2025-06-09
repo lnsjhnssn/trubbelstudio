@@ -1,29 +1,54 @@
 ---
 import SocialLinks from "../components/SocialLinks.astro";
+import { Image } from "astro:assets";
+import linus from "../assets/images/linus-with-plant.jpg";
 ---
 
 <div class="header">
-  <h1>Hejsan, my name is Linus.</h1>
-  <p class="subtitle">
-    I'm a Web Developer and Sound Designer from Norrbotten, Sweden. Living in
-    Geneva, Switzerland.
-  </p>
-  <p>
-    Get in touch:
-    <a href="mailto:lnsjhnssn@gmail.com" class="mail-link">
-      lnsjhnssn@gmail.com
-    </a>
-  </p>
-  <div class="social-links">
-    <SocialLinks />
+  <div class="header-text">
+    <h1>Hejsan, my name is Linus.</h1>
+    <p class="subtitle">
+      I'm a Web Developer / Sound Designer / Creative Technologist from
+      Norrbotten, Sweden. Living in Geneva, Switzerland.
+    </p>
+
+    <p>
+      Contact me:
+      <a href="mailto:lnsjhnssn@gmail.com" class="mail-link">
+        lnsjhnssn@gmail.com
+      </a>
+    </p>
+    <div class="social-links">
+      <SocialLinks />
+    </div>
+  </div>
+  <div>
+    <div class="image-container">
+      <Image
+        class="header-image"
+        src={linus}
+        alt="Me holding a plant, hiding behind a leaf."
+      />
+      <p class="image-caption">Me holding a plant, hiding behind a leaf.</p>
+    </div>
   </div>
 </div>
 
 <style>
   .header {
-    max-width: 570px;
-    margin-bottom: var(--space-xl);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
     margin-top: var(--space-3xl);
+  }
+
+  @media screen and (max-width: 689px) {
+    .header {
+      grid-template-columns: 1fr;
+    }
+
+    .image-container {
+    }
   }
 
   .social-links {
@@ -32,22 +57,37 @@ import SocialLinks from "../components/SocialLinks.astro";
     margin-top: var(--space-xl);
     margin-bottom: var(--space-3xl);
   }
-  .subtitle {
-    max-width: 520px;
+
+  .image-container {
+    max-width: 330px;
   }
 
-  /* @media screen and (min-width: 689px) {
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-2xl);
-    }
-  } */
-
   h1 {
+    font-family: "Inter", sans-serif;
     font-size: var(--step-0);
     line-height: 1.5;
     margin-bottom: 1em;
     font-weight: var(--font-weight-normal);
+  }
+
+  .image-caption {
+    font-size: var(--step--1);
+    line-height: 1.5;
+    font-weight: var(--font-weight-normal);
+    text-align: end;
+  }
+
+  @media screen and (max-width: 689px) {
+    .image-container {
+      max-width: 100%;
+    }
+
+    .header-image {
+      max-width: 200px;
+    }
+
+    .image-caption {
+      text-align: start;
+    }
   }
 </style>
