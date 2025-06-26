@@ -17,7 +17,7 @@ const isActive = (path: string) => {
   // For about page
   if (path === "/about" && currentPath.startsWith("/about")) return true;
   // For work pages
-  if (path === "/work/web" && currentPath.startsWith("/work/")) return true;
+  if (path === "/work/all" && currentPath.startsWith("/work/")) return true;
   return false;
 };
 ---
@@ -32,7 +32,7 @@ const isActive = (path: string) => {
         <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
       </li>
       <li>
-        <a href="/work/web" class={isActive("/work/web") ? "active" : ""}
+        <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
           >Work</a
         >
       </li>
