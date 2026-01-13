@@ -7,7 +7,7 @@ pubDate: "2026-02-01"
 link: https://linusriihimaki.com
 cover: "./absente-screenshot.png"
 coverAlt: "Screenshot of hero section of application"
-subtitle: "2025 | Web design & Development | Under Development "
+subtitle: "2026 | Web design & Development | Under Development "
 tags:
   - web
 published: true

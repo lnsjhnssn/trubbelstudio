@@ -35,14 +35,15 @@ const isActive = (path: string) => {
   <h2>Some projects I’ve worked on</h2>
 
   <div class="work-header-links">
-    <span class="filter-text">Filter:</span>
-    <a href="/work/web" class={isActive("/work/web") ? "active" : ""}>Web</a>
+    <a href="/work/web" class={isActive("/work/web") ? "active" : ""}
+      >Web Development</a
+    >
+    <span class="separator">|</span>
     <a href="/work/sound" class={isActive("/work/sound") ? "active" : ""}
-      >Sound</a
+      >Sound Design and Mixing</a
     >
-    <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
-      >Show All</a
-    >
+    <span class="separator">|</span>
+    <a href="/work/all" class={isActive("/work/all") ? "active" : ""}>All</a>
   </div>
 </div>
 
@@ -112,26 +113,53 @@ const isActive = (path: string) => {
   .work-header-links {
     display: flex;
     gap: var(--space-s);
-    margin-top: var(--space-m);
-    margin-bottom: var(--space-xl);
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-2xl);
     font-size: var(--step-0);
   }
 
   .card {
     padding-bottom: var(--space-xl);
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 5fr 7fr;
     gap: var(--space-l);
     width: 100%;
+  }
+
+  @media screen and (max-width: 760px) {
+    .card {
+      grid-template-columns: 1fr;
+      gap: var(--space-m);
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .work-header-links {
+      flex-direction: column;
+      gap: var(--space-s);
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .image {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    .separator {
+      display: none;
+    }
   }
 
   .image {
     max-width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 1/1;
+
     object-fit: cover;
     margin-top: var(--space-2xs);
+    border-radius: var(--radius-xs);
   }
 
   .image:hover {

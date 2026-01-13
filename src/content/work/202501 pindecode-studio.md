@@ -3,7 +3,7 @@ title: Pinecode Studio
 
 description: Landing page for web development-studio.
 
-pubDate: "2025-08-20"
+pubDate: "2025-01-20"
 link: https://pinecode.studio
 cover: "./pinecode-studio.png"
 coverAlt: "Screenshot of hero section of application"
