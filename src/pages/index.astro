@@ -7,26 +7,31 @@ import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
-  <NavbarHome />
+  <!-- <NavbarHome /> -->
   <main>
     <div class="header">
       <h1>Hejsan, I'm Linus.</h1>
       <p class="subtitle">
-        Web Developer & Sound Designer from Norrbotten, Sweden. Living in
-        Geneva, Switzerland.
-      </p>
-      <p>
-        I am available for work. Get in touch:
-        <a href="mailto:lnsjhnssn@gmail.com" class="mail-link">
-          lnsjhnssn@gmail.com
-        </a>
+        I'm a Web Developer and Sound Designer from Norrbotten, Sweden. Living
+        in Geneva, Switzerland.
       </p>
       <div class="social-links">
-        <SocialLinks />
+        <p>
+          <a href="/about">About</a>
+        </p>
+        <p>
+          <a href="/">Work</a>
+        </p>
+        <p>
+          <a href="mailto:lnsjhnssn@gmail.com" class="mail-link">
+            Get in touch by email
+          </a>
+        </p>
+        <!-- <SocialLinks /> -->
       </div>
     </div>
 
-    <section>
+    <section class="blog-section">
       <Blog />
     </section>
   </main>
@@ -34,14 +39,20 @@ import SocialLinks from "../components/SocialLinks.astro";
 
 <style>
   .header {
-    max-width: 570px;
+    margin-top: var(--space-3xl);
+  }
+  .blog-section {
+    margin-top: var(--space-xl);
+  }
+  .header {
+    max-width: 500px;
     margin-bottom: var(--space-xl);
   }
 
   .social-links {
     display: flex;
     gap: var(--space-xs);
-    margin-top: var(--space-xl);
+    /* margin-top: var(--space-xl); */
     margin-bottom: var(--space-3xl);
   }
   .subtitle {
@@ -57,7 +68,7 @@ import SocialLinks from "../components/SocialLinks.astro";
   }
 
   h1 {
-    font-size: var(--step-0);
+    font-size: var(--step--1);
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
     margin-bottom: 1em;

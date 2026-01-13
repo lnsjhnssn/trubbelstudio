@@ -5,6 +5,7 @@ import NavbarProjects from "../components/NavbarProjects.astro";
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
 import Blog from "../components/Blog.astro";
+import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
@@ -14,67 +15,43 @@ import Blog from "../components/Blog.astro";
       <div class="text-grid">
         <h1 class="page-title">About</h1>
         <p>
-          After finishing a <strong
-            >Bachelor of Science in Information Sciences</strong
-          > at Umeå University, a year studying <strong>Music for Cinema</strong
-          > at Stockholm University, and a course in <strong
-            >Electric Engineering</strong
-          > at Mittuniversitet, I’ve been moving between <strong
-            >creating sound and music</strong
-          > for theatre, dance and movies, and <strong
-            >creating websites.</strong
-          >
+          After finishing a Bachelor of Science in Information Sciences at Umeå
+          University, a year studying Music for Cinema at Stockholm University
+          and a course in Electric Engineering at Mittuniversitet, I’ve been
+          moving between creating sound and music for theatre, dance and movies,
+          and designing and developing websites.
         </p>
-        <p>
-          In 2024, I started the <strong
-            >Fullstack Developer Program at Altcademy</strong
-          > to develop my coding skills and seek more opportunities in <strong
-            >web design and development.</strong
-          > I’ve been working in <strong>HTML, CSS, and JavaScript</strong> since
-          I was a teenager (remember Dreamweaver or tweaking your friend’s MySpace
-          profile?) and in my theatre work I’ve done some coding with <strong
-            >MAX/MSP</strong
-          >. But it wasn’t until recently that I decided to seriously invest in
-          becoming a web designer and developer by learning the tools and
-          frameworks people use today. Like <strong
-            >React, TypeScript, Tailwind CSS, Figma, Astro, Ruby on Rails</strong
-          >, and more.
-        </p>
-        <p>
-          If you’re looking for a <strong>developer</strong> for your next website
-          or app, or a <strong>sound designer</strong> or
-          <strong>mixer</strong> for your next project, get in touch.
-        </p>
-        <p>
-          <strong>Contact: </strong>
-          <a href="mailto:lnsjhnssn@gmail.com" class="mail-link"
-            >lnsjhnssn@gmail.com</a
-          >
-        </p>
+
+        <a href="mailto:lnsjhnssn@gmail.com" class="mail-link">Email</a>
+
+        <div class="social-links">
+          <SocialLinks />
+        </div>
       </div>
-      <div class="image-grid"></div>
     </div>
+    <div class="image-grid"></div>
   </main>
-
-  <style>
-    .grid-2 {
-      margin: var(--space-xl) 0;
-      /* max-width: 570px; */
-      text-align: left;
-      display: grid;
-      grid-template-columns: 3fr 4fr;
-      gap: var(--space-s);
-      margin: 0 auto;
-      padding-bottom: var(--space-xl);
-    }
-
-    @media screen and (max-width: 800px) {
-      .grid-2 {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .text-grid {
-    }
-  </style>
 </Layout>
+
+<style>
+  .grid-2 {
+    margin: var(--space-xl) 0;
+    /* max-width: 570px; */
+    text-align: left;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: var(--space-s);
+    margin: 0 auto;
+    padding-bottom: var(--space-xl);
+  }
+
+  @media screen and (max-width: 800px) {
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .social-links {
+    margin-top: var(--space-l);
+  }
+</style>

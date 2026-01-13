@@ -10,20 +10,26 @@ const { title = "trubbelstudio" } = Astro.props;
 <nav class="navbar">
   <div class="navbar-container">
     <div>
-      <a href="/" class="navbar-link">←back</a>
+      <a href="/">home</a>
     </div>
 
     <!-- <div class="navbar-menu">
       <a href="/about" class="navbar-link">about</a>
       <a href="/" class="navbar-link">projects</a>
     </div> -->
-    <SocialLinks />
+    <!-- <SocialLinks /> -->
+    <div class="navbar-menu">
+      <a href="/about">about</a>
+      <a href="/">work</a>
+      <a href="mailto:lnsjhnssn@gmail.com">email</a>
+    </div>
   </div>
 </nav>
 
 <style>
   .navbar {
     width: 100%;
+    margin-bottom: var(--space-2xl);
   }
 
   .navbar-container {
@@ -33,7 +39,7 @@ const { title = "trubbelstudio" } = Astro.props;
     margin: var(--space-l) 0;
 
     line-height: 1;
-    font-size: var(--step-1);
+    font-size: var(--step--1);
   }
 
   .navbar-brand {
@@ -53,12 +59,12 @@ const { title = "trubbelstudio" } = Astro.props;
 
   .navbar-menu {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
   }
 
-  .navbar-link {
-    font-size: var(--step-0);
+  .back-link {
+    font-size: var(--step--1);
     text-decoration: none;
     transition: color 0.2s ease;
   }

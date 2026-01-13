@@ -35,7 +35,7 @@ const sortedPosts = allBlogPosts.sort(
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--space-xs);
+    gap: var(--space-2xs);
     margin: 0 auto;
     padding-bottom: var(--space-xl);
   }
@@ -59,6 +59,8 @@ const sortedPosts = allBlogPosts.sort(
   .image:hover {
     /* filter: none; */
     border: 5px solid var(--apple-bg);
+
+    border-radius: var(--space-m);
   }
 
   .date {
