@@ -86,7 +86,7 @@ const isActive = (path: string) => {
     window.history.replaceState({ filter }, "", currentPath);
 
     // Handle clicks on work items
-    const links = document.querySelectorAll(".image-link");
+    const links = document.querySelectorAll<HTMLAnchorElement>(".image-link");
     links.forEach((link) => {
       link.addEventListener("click", (e) => {
         const tag = link.getAttribute("data-tag");
@@ -99,8 +99,21 @@ const isActive = (path: string) => {
 </script>
 
 <style>
+  h3 {
+    font-size: var(--step-0);
+  }
+
+  .subtitle {
+    font-size: var(--step--1);
+  }
+
   .work-list {
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: var(--space-xl);
+    list-style: none;
+    padding: 0;
   }
 
   .work-header {
@@ -113,24 +126,16 @@ const isActive = (path: string) => {
   .work-header-links {
     display: flex;
     gap: var(--space-s);
-    margin-top: var(--space-s);
-    margin-bottom: var(--space-2xl);
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-l);
     font-size: var(--step-0);
   }
 
   .card {
-    padding-bottom: var(--space-xl);
-    display: grid;
-    grid-template-columns: 5fr 7fr;
-    gap: var(--space-l);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-m);
     width: 100%;
-  }
-
-  @media screen and (max-width: 760px) {
-    .card {
-      grid-template-columns: 1fr;
-      gap: var(--space-m);
-    }
   }
 
   @media screen and (max-width: 760px) {
@@ -138,25 +143,17 @@ const isActive = (path: string) => {
       flex-direction: column;
       gap: var(--space-s);
     }
-  }
 
-  @media screen and (max-width: 760px) {
-    .image {
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 760px) {
     .separator {
       display: none;
     }
   }
 
   .image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-
+    aspect-ratio: 4 / 3;
     object-fit: cover;
     margin-top: var(--space-2xs);
     border-radius: var(--radius-xs);
