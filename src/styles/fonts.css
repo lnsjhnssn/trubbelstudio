@@ -29,3 +29,11 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "TG-Neighbor";
+  src: url("/fonts/TG-Neighbor.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

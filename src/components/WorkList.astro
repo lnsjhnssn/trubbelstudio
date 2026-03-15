@@ -9,13 +9,13 @@ interface Props {
 const { tag } = Astro.props;
 const allWorkPosts = await getCollection("work");
 const publishedPosts = allWorkPosts.filter(
-  (post) => post.data.published !== false
+  (post) => post.data.published !== false,
 );
 const filteredPosts = tag
   ? publishedPosts.filter((post) => post.data.tags?.includes(tag))
   : publishedPosts;
 const sortedPosts = filteredPosts.sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 // Get current path for active link styling
@@ -26,13 +26,17 @@ const isActive = (path: string) => {
   if (path === "/work/web" && currentPath.startsWith("/work/web")) return true;
   if (path === "/work/sound" && currentPath.startsWith("/work/sound"))
     return true;
-  if (path === "/work/all" && currentPath.startsWith("/work/all")) return true;
+  if (
+    path === "/work/all" &&
+    (currentPath.startsWith("/work/all") || currentPath === "/")
+  )
+    return true;
   return false;
 };
 ---
 
 <div class="work-header">
-  <h2>Some projects I’ve worked on</h2>
+  <h2>Work</h2>
 
   <div class="work-header-links">
     <a href="/work/web" class={isActive("/work/web") ? "active" : ""}
@@ -40,7 +44,7 @@ const isActive = (path: string) => {
     >
     <span class="separator">|</span>
     <a href="/work/sound" class={isActive("/work/sound") ? "active" : ""}
-      >Sound Design and Mixing</a
+      >Sound Design & Music</a
     >
     <span class="separator">|</span>
     <a href="/work/all" class={isActive("/work/all") ? "active" : ""}>All</a>
@@ -171,11 +175,11 @@ const isActive = (path: string) => {
 
   .work-header-links a {
     text-decoration: none;
-    color: light-dark(var(--text-color), var(--text-color-dark));
+    color: light-dark(var(--text-color-dark), var(--text-color-dark));
   }
 
   .filter-text {
-    color: light-dark(var(--text-secondary), var(--text-secondary-dark));
+    color: light-dark(var(--text-secondary-dark), var(--text-secondary-dark));
   }
 
   .work-header-links a.active {
@@ -184,7 +188,7 @@ const isActive = (path: string) => {
   }
 
   .subtitle {
-    color: light-dark(var(--text-secondary), var(--text-secondary-dark));
+    color: light-dark(var(--text-secondary-dark), var(--text-secondary-dark));
   }
 
   .text-link {

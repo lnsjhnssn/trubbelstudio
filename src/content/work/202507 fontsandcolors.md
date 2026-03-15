@@ -1,5 +1,5 @@
 ---
-title: Fonts&Colors — The most minimalistic color picker.
+title: Fonts & Colors — Color picker
 
 description: The most minimalistic color picker for your new website.
 
