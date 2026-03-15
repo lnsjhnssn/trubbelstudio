@@ -179,7 +179,7 @@ const isActive = (path: string) => {
   }
 
   .filter-text {
-    color: light-dark(var(--text-secondary-dark), var(--text-secondary-dark));
+    color: light-dark(var(--text-secondary), var(--text-secondary-dark));
   }
 
   .work-header-links a.active {
@@ -188,7 +188,9 @@ const isActive = (path: string) => {
   }
 
   .subtitle {
-    color: light-dark(var(--text-secondary-dark), var(--text-secondary-dark));
+    color: light-dark(var(--text-secondary), var(--text-secondary-dark));
+    margin-top: var(--space-2xs);
+    font-size: var(--step--1);
   }
 
   .text-link {
