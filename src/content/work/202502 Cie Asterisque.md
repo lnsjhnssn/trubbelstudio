@@ -1,5 +1,5 @@
 ---
-title: Portfolio website for Orélie Fuchs
+title: Orélie Fuchs / Cie Asterisque*
 description: Designed and built a new portfolio website for Cie Astérisque, led by the artist Orélie Fuchs.
 
 pubDate: "2025-08-11"

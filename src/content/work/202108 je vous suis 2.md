@@ -12,6 +12,8 @@ imageCopyright: "© Orélie Fuchs"
 tags:
   - music
   - sound
+  - theatre
+  - dance
 published: true
 ---
 

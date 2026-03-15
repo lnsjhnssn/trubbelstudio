@@ -10,6 +10,8 @@ subtitle: "2024 | Sound Design | Theatre"
 imageCopyright: "© Ariane Catton Balabeau"
 tags:
   - sound
+  - theatre
+  - music
 published: true
 ---
 

@@ -68,11 +68,19 @@ const isActive = (path: string) => {
             </a>
           </div>
 
-          <div>
+          <div class="text-content">
             <a href={`/work/${post.slug}`} class="text-link" data-tag={tag}>
               <h3>{post.data.title}</h3>
-              <p class="subtitle">{post.data.subtitle}</p>
             </a>
+            {post.data.tags && post.data.tags.length > 0 && (
+              <div class="tags">
+                {post.data.tags.map((postTag: string) => (
+                  <span class="tag" data-tag={postTag}>
+                    {postTag}
+                  </span>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </li>
@@ -195,6 +203,32 @@ const isActive = (path: string) => {
 
   .text-link {
     text-decoration: none;
+  }
+
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs);
+    margin-top: var(--space-2xs);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.125rem var(--space-2xs);
+    border-radius: 999px;
+    font-size: var(--step--1);
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    color: inherit;
+    background-color: rgb(242, 242, 242);
   }
 
   @media (hover: hover) {

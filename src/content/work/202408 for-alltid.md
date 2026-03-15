@@ -8,7 +8,6 @@ coverAlt: "Cover"
 subtitle: "2024 | Music | Album"
 tags:
   - music
-  - film
   - sound
 published: true
 ---
