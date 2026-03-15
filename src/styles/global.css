@@ -14,9 +14,9 @@ body {
   font-family: "Inter", sans-serif;
   /* font-family: "HEX Franklin", sans-serif; */
   /* background: var(--gray-2); */
-  background: light-dark(var(--sky-bg2), #111);
+  background: light-dark(#111, #111);
 
-  color: light-dark(var(--text-primary), var(--text-primary-dark));
+  color: light-dark(var(--text-primary-dark), var(--text-primary-dark));
   font-weight: var(--font-weight-normal);
   /* background-image: url("../assets/images/nnnoise-transparent.svg"); */
   background-repeat: repeat;
@@ -37,7 +37,7 @@ body {
 }
 
 .text-secondary {
-  color: light-dark(var(--text-secondary), var(--text-secondary-dark));
+  color: light-dark(var(--text-secondary-dark), var(--text-secondary-dark));
 }
 
 main,
@@ -65,19 +65,23 @@ h6 {
   font-weight: var(--font-weight-medium);
   line-height: 1.5;
   font-family: "HEX Franklin", sans-serif;
+  /* font-family: "TG-Neighbor", sans-serif; */
   /* font-variation-settings: "wght" 400, "slnt" 0, "CASL" 0, "CRSV" 0, "MONO" 0.68; */
+
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: var(--step-2);
+  font-size: var(--step-3);
 }
 
 h2 {
-  font-size: var(--step-2);
+  font-size: var(--step-3);
 }
 
 h3 {
-  font-size: var(--step-1);
+  font-size: var(--step-2);
 }
 
 .page-header {
@@ -157,7 +161,7 @@ img {
 }
 
 .in-link:hover {
-  color: light-dark(var(--text-primary), var(--text-primary-dark));
+  color: light-dark(var(--text-primary-dark), var(--text-primary-dark));
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }

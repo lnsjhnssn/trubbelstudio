@@ -16,22 +16,21 @@ const isActive = (path: string) => {
   if (path === "/" && (currentPath === "/" || currentPath === "")) return true;
   // For about page
   if (path === "/about" && currentPath.startsWith("/about")) return true;
-  // For work pages
-  if (path === "/work/all" && currentPath.startsWith("/work/")) return true;
+  // For work pages - also active on homepage
+  if (
+    path === "/work/all" &&
+    (currentPath.startsWith("/work/") || currentPath === "/")
+  )
+    return true;
   return false;
 };
 ---
 
 <nav class="navbar">
   <div class="navbar-container">
-    <div class="navbar-logo">
-      <a href="/">LJR</a>
-    </div>
     <div class="navbar-menu">
       <ul class="menu">
-        <li>
-          <a href="/" class={isActive("/") ? "display-none" : ""}>Home</a>
-        </li>
+        <li>Linus Riihimäki</li>
         <li>
           <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
         </li>
@@ -60,7 +59,12 @@ const isActive = (path: string) => {
   .navbar-menu {
     display: flex;
     justify-content: end;
+    line-height: 1;
+  }
 
+  .navbar-logo {
+    display: flex;
+    justify-content: start;
     line-height: 1;
   }
 
@@ -86,16 +90,14 @@ const isActive = (path: string) => {
     display: none;
   }
 
-  .navbar-logo {
-    font-family: "TG-Hexed", sans-serif;
-    font-size: var(--step-1);
+  .navbar-logo h1 {
+    font-size: var(--step-0);
     font-weight: 400;
     line-height: 1;
     border-radius: 9999px;
-    color: white;
   }
 
-  .navbar-logo a {
+  .navbar-logo h1 {
     text-decoration: none;
     color: light-dark(var(--text-color), var(--text-color-dark));
   }
