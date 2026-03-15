@@ -3,17 +3,7 @@
 @import "./fonts.css";
 
 body {
-  /* font-family: "Recursive", sans-serif;
-  font-variation-settings: "wght" 400, "slnt" 0, "CASL" 0, "CRSV" 0, "MONO" 0.68; */
-
-  /* font-family: "LumaSans", sans-serif;   */
-  /* font-family: "Archivo", sans-serif; */
-  /* font-family: "HEX Franklin", sans-serif; */
-  /* font-family: "Roboto Flex", sans-serif; */
-
   font-family: "Inter", sans-serif;
-  /* font-family: "HEX Franklin", sans-serif; */
-  /* background: var(--gray-2); */
   background: light-dark(#fcfcfc, #111);
 
   color: light-dark(var(--text-primary), var(--text-primary-dark));

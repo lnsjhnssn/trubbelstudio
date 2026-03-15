@@ -1,5 +1,5 @@
 ---
-title: Website for Atelier Tentatif
+title: Atelier Tentatif
 
 description: Sound design for the performance Atelier Tentatif.
 

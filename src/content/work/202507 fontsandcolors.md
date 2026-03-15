@@ -1,7 +1,7 @@
 ---
-title: Fonts & Colors — Color picker
+title: Fonts & Colors
 
-description: The most minimalistic color picker for your new website.
+description: Minimalistic color picker.
 
 pubDate: "2025-08-10"
 link: https://fontsandcolors.netlify.app

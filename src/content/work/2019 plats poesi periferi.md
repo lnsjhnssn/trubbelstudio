@@ -10,6 +10,7 @@ tags:
   - music
   - film
   - sound
+  - soundtrack
 published: true
 ---
 
