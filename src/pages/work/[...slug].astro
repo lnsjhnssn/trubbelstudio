@@ -35,6 +35,7 @@ const backUrl = tag ? `/work/${tag}` : "/work/all";
               class="image"
               src={post.data.cover}
               alt={post.data.coverAlt || post.data.title}
+              transition:name={`work-image-${post.slug}`}
             />
           )
         }
