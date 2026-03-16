@@ -5,7 +5,7 @@ description: Website for the theatre company Absent.e pour le moment
 
 pubDate: "2026-02-01"
 link: https://linusriihimaki.com
-cover: "./absente-screenshot.png"
+cover: "./absente-new.png"
 coverAlt: "Screenshot of hero section of application"
 subtitle: "2026 | Web design & Development | Under Development "
 tags:
