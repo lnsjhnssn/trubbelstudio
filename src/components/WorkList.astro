@@ -36,7 +36,7 @@ const isActive = (path: string) => {
 ---
 
 <div class="work-header">
-  <h2>Work</h2>
+  <h1>Work</h1>
 
   <div class="work-header-links">
     <a href="/work/web" class={isActive("/work/web") ? "active" : ""}
@@ -44,7 +44,7 @@ const isActive = (path: string) => {
     >
     <span class="separator">|</span>
     <a href="/work/sound" class={isActive("/work/sound") ? "active" : ""}
-      >Sound Design & Music</a
+      >Sound & Music</a
     >
     <span class="separator">|</span>
     <a href="/work/all" class={isActive("/work/all") ? "active" : ""}>All</a>
@@ -70,7 +70,7 @@ const isActive = (path: string) => {
 
           <div class="text-content">
             <a href={`/work/${post.slug}`} class="text-link" data-tag={tag}>
-              <h3>{post.data.title}</h3>
+              <h2>{post.data.title}</h2>
             </a>
             {post.data.tags && post.data.tags.length > 0 && (
               <div class="tags">
@@ -111,8 +111,10 @@ const isActive = (path: string) => {
 </script>
 
 <style>
-  h3 {
+  h2 {
     font-size: var(--step-0);
+    font-weight: 500;
+    letter-spacing: -0.06em;
   }
 
   .subtitle {
