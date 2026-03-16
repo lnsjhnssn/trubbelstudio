@@ -142,7 +142,7 @@ img {
     font-weight: var(--font-weight-bold);
     color: var(--obsidian-accent);
     text-decoration: none;
-    transition: 0.3s ease-in-out;
+    transition: 0.1s ease-in-out;
     cursor: pointer;
   }
 }

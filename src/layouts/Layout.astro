@@ -3,7 +3,7 @@ import "../styles/global.css";
 import "../styles/fonts.css";
 import { ClientRouter } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";
-// import FooterSocialLinks from "../components/FooterSocialLinks.astro";
+import FooterSocialLinks from "../components/FooterSocialLinks.astro";
 
 interface Props {
   title: string;
@@ -30,6 +30,14 @@ const {
   <body>
     <Navbar />
     <slot />
-    <!-- <FooterSocialLinks /> -->
+    <FooterSocialLinks />
   </body>
 </html>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+</style>

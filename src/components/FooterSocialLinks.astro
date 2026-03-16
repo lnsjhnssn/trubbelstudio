@@ -13,15 +13,19 @@ const { title = "trubbelstudio" } = Astro.props;
       <a href="/about" class="navbar-link">about</a>
       <a href="/" class="navbar-link">projects</a>
     </div> -->
-    <div>
-      <h2>Contact</h2>
-      <a href="mailto:lnsjhnssn@gmail.com">Email</a>
+    <div class="footer-content">
       <SocialLinks />
     </div>
   </div>
 </footer>
 
 <style>
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+  }
+
   h2 {
     font-weight: var(--font-weight-normal);
     font-size: var(--step--1);
@@ -29,6 +33,7 @@ const { title = "trubbelstudio" } = Astro.props;
 
   .footer {
     width: 100%;
+    margin-top: auto;
   }
 
   .footer-container {
