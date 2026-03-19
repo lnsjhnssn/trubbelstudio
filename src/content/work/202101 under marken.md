@@ -4,7 +4,7 @@ description: Sound art, music and installation. Exhibition together with the wri
 subtitle: "2021 | Sound Artist, Co-Creator | Exhibition"
 pubDate: "2021-03-19"
 link: https://www.helenawikstrom.com/under-marken
-cover: "./undermarken_©helena_wikstrom2.png"
+cover: "./undermarken_©helena_wikstrom.png"
 coverAlt: "Photo from the exhibition Under marken"
 imageCopyright: "© Helena Wikström"
 tags:
