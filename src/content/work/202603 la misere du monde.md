@@ -5,7 +5,7 @@ description: La Misère du monde - D’après Pierre Bourdieu. Mise en scène Or
 
 pubDate: "2026-02-01"
 link: https://www.tpr.ch/saison-25-26/la-misere-du-monde/
-cover: "./lamiseredumonde.png"
+cover: "./lamiseredumonde3.png"
 coverAlt: "Showing a photo of a man with a accordeon with the text La misère du monde written under"
 subtitle: "2026 | Sound Design"
 tags:
