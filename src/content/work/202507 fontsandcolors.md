@@ -13,6 +13,6 @@ tags:
 published: true
 ---
 
-The most minimalistic color picker for your new website. Built with HTML, CSS, Vanilla Javascript. No JS frameworks were harmed in building this application.
+Tried to make an easy color picker for testing text vs bg colors. Built with HTML, CSS, Vanilla Javascript.
 
-[Link to application](https://fontsandcolors.netlify.app)
+[Link](https://fontsandcolors.netlify.app)
