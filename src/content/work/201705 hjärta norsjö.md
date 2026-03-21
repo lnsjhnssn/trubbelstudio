@@ -3,12 +3,12 @@ title: Hjärta Norsjö
 description: Hjärta Norsjö by Lisa Josephson & Sophia Josephson
 pubDate: "August 31 2017"
 link: https://www.imdb.com/title/tt7304638/
-cover: "./hjarta-norsjo.jpeg"
+cover: "./hjarta-norsjo-cover.png"
 coverAlt: "Cover"
 subtitle: "2017 | Original Soundtrack | Documentary"
 tags:
   - music
-  - film
+  - documentary
   - sound
   - soundtrack
 published: true
@@ -22,3 +22,5 @@ Hjärta Norsjö won the Storspoven Award 2017 of the Umeå European Film Festiva
 Directors: Lisa Josephson & Sophia Josephson . Production Company: KF Huset. Producer: Sophia Josephson. Cinematography: Lisa Josephson. Editing: Lisa Josephson, Sophia Josephson. Sound Engineer: Sophia Josephson. Research: Linnea Sköldqvist. Dramaturgy: Maximilien Van Aertryck, Ragnar Bragason. Co-producer: Katja Härkönen. Mixing: Ljudbang AB. Music: Folkvang. Production Company: KF Huset. Co-production: Filmpool Nord AB. Support: Film i Västerbotten, Sveriges Television (SVT), Konstnärsnämnden. Cast: Henny From, Elvira Redlund
 
 I composed the music for the film as part of the group Folkvang.
+
+[Imdb - Hjärta Norsjö](https://www.imdb.com/title/tt7304638/)
