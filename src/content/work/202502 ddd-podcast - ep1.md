@@ -3,7 +3,7 @@ title: ddd - Podcast series
 
 description: Sound design for the ddd podcast episode 1.
 
-pubDate: "2025-02-19"
+pubDate: "2024-10-19"
 link: https://avdc-ddd.ch/resources/podcasts/
 cover: "./ddd-podcast.png"
 coverAlt: "Photo from the ddd podcast episode 1"
