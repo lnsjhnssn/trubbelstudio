@@ -15,21 +15,25 @@ import LinusImage from "../assets/images/linus-with-plant.jpg";
     <div class="grid-2">
       <div class="text-grid">
         <p>
-          I work between creating sound and and music for theatre, dance and
-          movies, and designing and developing websites.
+          I work between web design and development, and creating sound and
+          music for theatre, dance and film, as well as with music projects such
+          as Folkvang and Old Amica.
         </p>
-
-        <p>I speak Swedish, English and French.</p>
-
-        <div class="social-links-container">
-          <p>
-            Email me at:
-            <a
-              href="mailto:linus@linusriihimaki.com"
-              class="out-link text-decoration-none">linus@linusriihimaki.com</a
-            >
-          </p>
-          <!-- <p>
+        <p>
+          Based in Geneva, Switzerland, I’m available for remote work and speak
+          English, French and Swedish.
+        </p>
+        <p>
+          <div class="social-links-container">
+            <p>
+              Email me at:
+              <a
+                href="mailto:linus@linusriihimaki.com"
+                class="out-link text-decoration-none"
+                >linus@linusriihimaki.com</a
+              >
+            </p>
+            <!-- <p>
             GitHub:
             <a
               href="https://github.com/lnsjhnssn"
@@ -56,58 +60,59 @@ import LinusImage from "../assets/images/linus-with-plant.jpg";
               @linus-johansson-riihimaki
             </a>
           </p> -->
-        </div>
-        <div class="image-grid"></div>
+          </div>
+          <div class="image-grid"></div>
+        </p>
       </div>
-    </div>
 
-    <style>
-      .grid-2 {
-        margin: var(--space-xl) 0;
-        text-align: left;
-        display: grid;
-        grid-template-columns: 7fr 5fr;
-        gap: var(--space-s);
-        margin: 0 auto;
-        padding-bottom: var(--space-xl);
-      }
-
-      @media screen and (max-width: 720px) {
+      <style>
         .grid-2 {
-          grid-template-columns: 1fr;
+          margin: var(--space-xl) 0;
+          text-align: left;
+          display: grid;
+          grid-template-columns: 7fr 5fr;
+          gap: var(--space-s);
+          margin: 0 auto;
+          padding-bottom: var(--space-xl);
+        }
+
+        @media screen and (max-width: 720px) {
+          .grid-2 {
+            grid-template-columns: 1fr;
+          }
+
+          .image-grid {
+            order: -1;
+            width: 100%;
+          }
+
+          .image-about {
+            width: 100%;
+            margin-bottom: var(--space-m);
+          }
         }
 
         .image-grid {
-          order: -1;
-          width: 100%;
+          justify-self: end;
         }
 
-        .image-about {
-          width: 100%;
-          margin-bottom: var(--space-m);
+        .out-link {
+          color: var(--obsidian-accent);
+          font-weight: var(--font-weight-bold);
         }
-      }
 
-      .image-grid {
-        justify-self: end;
-      }
+        .out-link:hover {
+          color: light-dark(var(--text-primary), var(--text-primary-dark));
+        }
 
-      .out-link {
-        color: var(--obsidian-accent);
-        font-weight: var(--font-weight-bold);
-      }
+        .text-decoration-none {
+          text-decoration: none;
+        }
 
-      .out-link:hover {
-        color: light-dark(var(--text-primary), var(--text-primary-dark));
-      }
-
-      .text-decoration-none {
-        text-decoration: none;
-      }
-
-      .social-links-container p {
-        margin: 0;
-      }
-    </style>
+        .social-links-container p {
+          margin: 0;
+        }
+      </style>
+    </div>
   </main>
 </Layout>
