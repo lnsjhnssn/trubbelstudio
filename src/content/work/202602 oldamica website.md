@@ -10,6 +10,7 @@ coverAlt: "Screenshot of hero section of application"
 subtitle: "2026 | Web design & Development"
 tags:
   - web
+  - discography
 published: true
 ---
 
