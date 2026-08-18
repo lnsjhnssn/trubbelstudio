@@ -37,7 +37,17 @@ const isActive = (path: string) => {
 
 <div class="work-header">
   <h1>Hello!</h1>
+  <div class="about-grid">  
+    <div class="about-grid-item">
+  <p>
+    I’m Linus, a designer, developer and sound artist based in Geneva.
+    <p>I design
+    and build websites, create sound and music for theatre, dance and film, and
+    make music with projects like Folkvang and Old Amica.</p>
+    <p>Currently looking for new opportunities. If you have something in mind, please get in touch.<span class="green-dot" aria-hidden="true"></span></p>
+<p><a href="mailto:linus@linusriihimaki.com">linus@linusriihimaki.com</a></p>
 
+</div></div>
   <div class="work-header-links">
     <a href="/work/web" class={isActive("/work/web") ? "active" : ""}>Web</a>
     <span class="separator">|</span>
@@ -110,6 +120,10 @@ const isActive = (path: string) => {
 </script>
 
 <style>
+
+  h1 {
+    margin-bottom: var(--space-m);
+  }
   h2 {
     font-size: var(--step-0);
     font-weight: 500;
@@ -118,6 +132,27 @@ const isActive = (path: string) => {
 
   .subtitle {
     font-size: var(--step--1);
+  }
+
+  .green-dot {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: var(--space-2xs);
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: var(--apple-bg);
+    animation: green-dot-blink 1.2s infinite;
+  }
+
+  @keyframes green-dot-blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
   }
 
   .work-list {
@@ -141,7 +176,7 @@ const isActive = (path: string) => {
     gap: var(--space-s);
     margin-top: var(--space-m);
     margin-bottom: var(--space-l);
-    font-size: var(--step-0);
+    font-size: var(--step--1);
   }
 
   .card {
@@ -240,4 +275,19 @@ const isActive = (path: string) => {
       transition: 0.5s ease-in-out;
     }
   }
+
+  .about-grid {
+          margin: var(--space-xl) 0;
+          text-align: left;
+          display: grid;
+          grid-template-columns: 7fr 5fr;
+          gap: var(--space-s);
+          margin: 0 auto;
+          padding-bottom: var(--space-xl);
+        }
+
+        @media screen and (max-width: 720px) {
+          .about-grid {
+            grid-template-columns: 1fr;
+          }
 </style>

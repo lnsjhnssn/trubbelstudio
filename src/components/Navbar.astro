@@ -30,21 +30,28 @@ const isActive = (path: string) => {
   <div class="navbar-container">
     <div class="navbar-menu">
       <ul class="menu">
-        <li>Linus Riihimäki</li>
         <li>
+          <h1>
+            <a href="/">Linus Riihimäki</a>
+          </h1>
+        </li>
+        <!-- <li>
           <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
         </li>
         <li>
           <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
             >Work</a
           >
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
 </nav>
 
 <style>
+  h1 {
+    font-size: var(--step-01);
+  }
   .navbar {
     width: 100%;
   }
