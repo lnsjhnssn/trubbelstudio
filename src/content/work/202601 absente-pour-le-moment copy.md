@@ -3,7 +3,7 @@ title: Absent.e pour le moment
 
 description: Website for the theatre company Absent.e pour le moment
 
-pubDate: "2026-02-01"
+pubDate: "2026-08-10"
 link: https://linusriihimaki.com
 cover: "./absente-3Medium.png"
 coverAlt: "Screenshot of hero section of application"

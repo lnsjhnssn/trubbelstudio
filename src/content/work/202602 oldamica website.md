@@ -3,7 +3,7 @@ title: Old Amica
 
 description: Old Amica archives.
 
-pubDate: "2026-02-01"
+pubDate: "2026-08-07"
 link: https://oldamica.com
 cover: "./oldamica-website.png"
 coverAlt: "Screenshot of hero section of application"

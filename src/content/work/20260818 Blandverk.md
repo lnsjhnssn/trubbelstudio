@@ -1,5 +1,5 @@
 ---
-title: Old Amica - Bländverk
+title: Bländverk
 description: Album with Old Amica, released on Whitelab Records 18 april 2026.
 
 pubDate: "2025-12-30"
