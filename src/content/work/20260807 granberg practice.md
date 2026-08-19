@@ -5,7 +5,7 @@ description: A simple expense tracker that lets users set monthly spending goals
 
 pubDate: "2026-08-08"
 link: https://pehrakegranberg.net
-cover: "./granberg-practice.png"
+cover: "./granberg-full.jpeg"
 coverAlt: "Wood box with blue stripes standing on top of a cardboard box"
 subtitle: "2026| Web design & Development"
 imageCopyright: "© Peå Granberg"
