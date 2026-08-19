@@ -44,8 +44,8 @@ const isActive = (path: string) => {
         </li>
         <!-- <li>
           <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
-        </li>
-        <li>
+        </li> -->
+        <!-- <li>
           <a href="/work/all" class={isActive("/work/all") ? "active" : ""}
             >Work</a
           >
@@ -57,6 +57,7 @@ const isActive = (path: string) => {
 
 <style>
   h1 {
+    font-family: "IBM Plex Mono", monospace;
     font-size: var(--step-01);
   }
 
@@ -101,8 +102,8 @@ const isActive = (path: string) => {
     display: flex;
     flex-direction: row;
     gap: var(--space-m);
-    justify-content: end;
-    align-items: start;
+    justify-content: start;
+    align-items: center;
   }
 
   .menu a {
