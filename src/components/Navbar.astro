@@ -30,10 +30,17 @@ const isActive = (path: string) => {
   <div class="navbar-container">
     <div class="navbar-menu">
       <ul class="menu">
-        <li>
+        <li class="navbar-brand">
           <h1>
             <a href="/">Linus Riihimäki</a>
           </h1>
+          <img
+            class="navbar-photo"
+            src="/profile-blacknwhite round.png"
+            alt="Portrait of Linus Riihimäki"
+            width="36"
+            height="36"
+          />
         </li>
         <!-- <li>
           <a href="/about" class={isActive("/about") ? "active" : ""}>About</a>
@@ -51,6 +58,21 @@ const isActive = (path: string) => {
 <style>
   h1 {
     font-size: var(--step-01);
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-s);
+  }
+
+  .navbar-photo {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
   }
   .navbar {
     width: 100%;
