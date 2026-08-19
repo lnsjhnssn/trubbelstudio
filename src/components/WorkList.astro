@@ -78,6 +78,7 @@ const isActive = (path: string) => {
     sortedPosts.map((post) => (
       <li>
         <div class="card">
+        
           <div>
             <a href={`/work/${post.slug}`} class="image-link" data-tag={tag}>
               {post.data.cover && (
@@ -135,6 +136,7 @@ const isActive = (path: string) => {
 
 <style>
 
+
   h1 {
     margin-bottom: var(--space-m);
   }
@@ -172,7 +174,7 @@ const isActive = (path: string) => {
   .work-list {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: var(--space-xl);
     list-style: none;
     padding: 0;
@@ -215,7 +217,8 @@ const isActive = (path: string) => {
     width: 100%;
     height: auto;
     display: block;
-    aspect-ratio: 4 / 3;
+    /* aspect-ratio: 4 / 3; */
+    
     object-fit: cover;
     margin-top: var(--space-2xs);
     border-radius: var(--radius-xs);
