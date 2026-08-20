@@ -22,4 +22,10 @@ const work = defineCollection({
     }),
 });
 
-export const collections = { work };
+const about = defineCollection({
+  schema: z.object({
+    title: z.string(),
+  }),
+});
+
+export const collections = { work, about };

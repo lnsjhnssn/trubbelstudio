@@ -1,0 +1,23 @@
+---
+title: Spara — Web Application
+
+description: A simple expense tracker that lets users set monthly spending goals and log their purchases. Built with HTML, CSS, Javascript, Inertia JS, Ruby on Rails.
+
+pubDate: "2026-08-08"
+link: https://budgetapp-zn76.onrender.com
+cover: "spara-cloud.png"
+coverAlt: "Screenshot of application showing the name spark on the left side and a login component on the right side."
+subtitle: "2025 | Web design & Development | Web application"
+tags:
+  - web
+  - application
+published: true
+---
+
+An expense tracker developed as a final project for the Altcademy Fullstack Development Program.
+
+Built with: React 18, Inertia.js, Ruby on Rails, PostgreSQL. Designed in: Figma, Photoshop, Illustrator.
+
+Link: [spara.cloud](https://spara.cloud)
+<br>
+[Github](https://github.com/lnsjhnssn/mybudget)

@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { SITE_TITLE, SITE_DESCRIPTION_FR } from "../consts";
+import { getEntry } from "astro:content";
 
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
-import LinusImage from "../assets/images/linus-with-plant.jpg";
+const about = await getEntry("about", "index");
+if (!about) {
+  throw new Error('Missing about content at src/content/about/index.md');
+}
+const { Content } = await about.render();
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
@@ -14,134 +17,45 @@ import LinusImage from "../assets/images/linus-with-plant.jpg";
     </div>
     <div class="grid-2">
       <div class="text-grid">
-        <p>
-          My work moves between the web and the performing arts. I’m interested
-          in communication, culture, and in keeping the web open, accessible and
-          human.
-        </p>
-
-        <p>
-          I believe thoughtful technology and design can help communicate ideas
-          clearly, support people and organisations, and make information easier
-          to access.
-        </p>
-        <p>
-          When I’m not working, I’m gardening, reading, baking and learning how
-          to build with wood and stone.
-        </p>
-        <p>I work in English, French and Swedish, remotely or in person.</p>
-        <p>
-          <a
-            href="mailto:linus@linusriihimaki.com"
-            class="out-link text-decoration-none">linus@linusriihimaki.com</a
-          >
-        </p>
-        <h2 class="normal-text">
-          <i>education</i>
-        </h2>
-        <ul>
-          <li>
-            <p>
-              Umeå University
-              <br />
-              Bachelor of Science - BS <br />
-              Library and Information Science
-            </p>
-          </li>
-          <li>
-            <p>
-              Altcademy
-              <br />
-              Full-stack Web Development <br />
-            </p>
-          </li>
-          <li>
-            <p>
-              Mid Sweden University
-              <br />
-              Sound Engineering <br />
-            </p>
-          </li>
-        </ul>
-        <h2 class="normal-text">
-          <i>skills</i>
-        </h2>
-        <ul>
-          <li>
-            <p>
-              web design, UI/UX, front-end development, accessibility,
-              information architecture, editorial design, content structure, CMS
-              development
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>
-              HTML, CSS / SCSS, JavaScript, TypeScript, React, Astro, WordPress,
-              Kirby, Tailwind, Git
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>Figma, Adobe Creative Cloud</p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <p>
-              sound design, composition, audio production, QLab, Ableton Live
-            </p>
-          </li>
-        </ul>
-        <h2 class="normal-text">
-          * For a full CV, please <a href="mailto:linus@linusriihimaki.com" "
-            >write me an email</a
-          >.
-        </h2>
+        <Content />
       </div>
-      <!-- <p>
-            GitHub:
-            <a
-              href="https://github.com/lnsjhnssn"
-              class="out-link text-decoration-none"
-            >
-              @lnsjhnssn</a
-            >
-          </p>
-          <p>
-            Bluesky:
-            <a
-              href="https://bsky.app/profile/linusjohansson.bsky.social"
-              class="out-link text-decoration-none"
-            >
-              @linusjohansson
-            </a>
-          </p>
-          <p>
-            Linkedin:
-            <a
-              href="https://www.linkedin.com/in/linus-johansson-riihimaki/"
-              class="out-link text-decoration-none"
-            >
-              @linus-johansson-riihimaki
-            </a>
-          </p> -->
+      <div class="image-grid"></div>
     </div>
-    <div class="image-grid"></div>
   </main>
 </Layout>
 
 <style>
-  h2 {
+  .text-grid :global(h2) {
     margin-top: var(--space-3xl);
     margin-bottom: var(--space-l);
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    font-size: var(--step--1);
+  }
+
+  .text-grid :global(ul) {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-m);
+  }
+
+  .text-grid :global(li) {
+    margin-bottom: var(--space-m);
+  }
+
+  .text-grid :global(a) {
+    color: var(--obsidian-accent);
+    font-weight: var(--font-weight-bold);
+    text-decoration: none;
+  }
+
+  .text-grid :global(a:hover) {
+    color: light-dark(var(--text-primary), var(--text-primary-dark));
   }
 
   .normal-text {
     font-family: "IBM Plex Mono", monospace;
-
     font-weight: 400;
     font-style: normal;
     font-size: var(--step--1);
@@ -175,23 +89,6 @@ import LinusImage from "../assets/images/linus-with-plant.jpg";
 
   .image-grid {
     justify-self: end;
-  }
-
-  .out-link {
-    color: var(--obsidian-accent);
-    font-weight: var(--font-weight-bold);
-  }
-
-  .out-link:hover {
-    color: light-dark(var(--text-primary), var(--text-primary-dark));
-  }
-
-  .text-decoration-none {
-    text-decoration: none;
-  }
-
-  .social-links-container p {
-    margin: 0;
   }
 
   .italic {
