@@ -1,5 +1,5 @@
 ---
-title: Absent.e pour le moment
+title: Absent·e pour le moment
 
 description: Website for the theatre company Absent.e pour le moment
 
@@ -7,7 +7,7 @@ pubDate: "2026-08-10"
 link: https://linusriihimaki.com
 cover: "./absente-3Medium.png"
 coverAlt: "Screenshot of hero section of application"
-imageCopyright: "© Absent.e pour le moment"
+imageCopyright: "© Absent·e pour le moment"
 subtitle: "2026 | Web design & Development"
 tags:
   - web
