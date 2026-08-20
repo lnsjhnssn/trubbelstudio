@@ -1,0 +1,21 @@
+---
+title: Fyr
+description: Fyr
+pubDate: "2023-10-01"
+link: https://www.youtube.com/watch?v=_lUFUZvSWXQ
+cover: "fyr.jpg"
+coverAlt: "Cover"
+subtitle: "2023 | Music | Album"
+tags:
+  - music
+  - sound
+published: true
+---
+
+Inspired by the words of Tove Jansson, the nameless voices on the shortwave radio, and the sounds of The Beach Boys.
+
+Written, recorded and mixed by Old Amica. Mastered by James Edward Armstrong. Photography by J.M. Almqvist and Yuliana Paranko.
+
+Listen on [Bandcamp](https://whitelabrecs.bandcamp.com/album/fyr)
+<br>
+Listen on [Spotify](https://open.spotify.com/album/0fXXQ2fVPLAWnMvaN0BbGi?si=xUBWo3dUQ-6ZLxqZvCPmPg)

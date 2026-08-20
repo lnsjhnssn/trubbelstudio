@@ -14,14 +14,14 @@ I work in English, French and Swedish, remotely or in person.
 
 ## education
 
-Umeå University  
-Bachelor of Science - BS  
+Umeå University\
+Bachelor of Science - BS\
 Library and Information Science
 
-Altcademy  
+Altcademy\
 Full-stack Web Development
 
-Mid Sweden University  
+Mid Sweden University\
 Sound Engineering
 
 ## skills
@@ -33,5 +33,3 @@ HTML, CSS / SCSS, JavaScript, TypeScript, React, Astro, WordPress, Kirby, Tailwi
 Figma, Adobe Creative Cloud
 
 sound design, composition, audio production, QLab, Ableton Live
-
-## \* For a full CV, please [write me an email](mailto:linus@linusriihimaki.com).

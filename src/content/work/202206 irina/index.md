@@ -1,0 +1,24 @@
+---
+title: IRINA
+description: Sound design for the performance Irina.
+pubDate: "2023-06-23"
+link: https://arsenic.ch/spectacle/irina/
+cover: "Irina_04.jpg"
+coverAlt: "Photo from the performance Irina"
+subtitle: "2021-2023 | Sound Engineer and Operator | Theatre"
+imageCopyright: "© Vicky Althaus"
+tags:
+  - sound
+  - theatre
+published: true
+---
+
+Sound Engineer for the documentary theatre production IRINA, with original sound design by Jérémie Conne. The piece is directed by Marika Dreistadt and explores the story of Irina Bialek through a multi-layered theatrical form, blending live performance, literature, and radiophonic fiction.
+
+"Irina, 17 years old, a young girl entrusted to France’s child welfare services since the age of one and a half, invites us to discover her story. And, through it, to take an interest in the lives of children placed in care. Irina has two passions: dance and writing. Two years ago, she began working on her first novel. It is through her perspective and her writing that this subject is explored.
+
+Marika Dreistadt chose to bring this story to the stage because it is deeply personal to her: Marika and Irina are family. IRINA, a documentary performance, is born from the protagonist's accounts as well as conversations with her social worker, her sister, her brother, her aunt, and the entire artistic team. It is a mental and sensory experience that engages the intimate self and deep emotional zones through theatre, literature, and audio fiction."
+
+Direction artistique: Marika Dreistadt. Conception: Marika Dreistadt, Simon Guelat, Viviane Pavillon. Mise en scène: Marika Dreistadt, Simon Guelat. Écriture: Irina Bialek. Avec Irina Bialek, Raphaël Defour, Viviane Pavillon. Scénographie: Marine Brosse assistée de Violette Bourhis.Création sonore: Jérémie Conne. Création lumière: Vicky Althaus. Création vidéo: Victor Hunziker. Son: Linus Johansson Riihimäki. Administration: Sarah Frund. Regard extérieur: Claire Deutsch.
+
+Link: [https://arsenic.ch/spectacle/irina/](https://arsenic.ch/spectacle/irina/)
