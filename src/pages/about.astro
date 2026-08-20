@@ -10,42 +10,93 @@ import LinusImage from "../assets/images/linus-with-plant.jpg";
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION_FR}>
   <main>
     <div class="page-header">
-      <h1 class="page-title">About</h1>
+      <h1 class="page-title normal-text italic se">about</h1>
     </div>
     <div class="grid-2">
       <div class="text-grid">
         <p>
-          I work between web design and development, and creating sound and
-          music for theatre, dance and film, as well as with music projects such
-          as <a
-            class="project-link"
-            href="https://open.spotify.com/artist/52J3z7LxbDOU9swOjQrk07?si=BBi1HZdFRLusogMNH62FjQ"
-            data-tooltip="Listen on Spotify"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Folkvang</a> and <a
-            class="project-link"
-            href="https://oldamica.com"
-            data-tooltip="Link to discography"
-            target="_blank"
-            rel="noopener noreferrer"
-          >Old Amica</a>.
+          My work moves between the web and the performing arts. I’m interested
+          in communication, culture, and in keeping the web open, accessible and
+          human.
+        </p>
+
+        <p>
+          I’m interested in how thoughtful technology and design can help
+          communicate ideas clearly, support people and organisations, and make
+          information easier to access.
         </p>
         <p>
-          Based in Geneva, Switzerland, I’m available for remote work and speak
-          English, French and Swedish.
+          When I’m not working, I’m gardening, reading, baking and learning how
+          to build in wood and stone.
         </p>
+        <p>I work in English, French and Swedish, remotely or in person.</p>
         <p>
-          <div class="social-links-container">
+          <a
+            href="mailto:linus@linusriihimaki.com"
+            class="out-link text-decoration-none">linus@linusriihimaki.com</a
+          >
+        </p>
+        <h2 class="normal-text">
+          <i>education</i>
+        </h2>
+        <ul>
+          <li>
             <p>
-              Email me at:
-              <a
-                href="mailto:linus@linusriihimaki.com"
-                class="out-link text-decoration-none"
-                >linus@linusriihimaki.com</a
-              >
+              Umeå University
+              <br />
+              Bachelor of Science - BS <br />
+              Library and Information Science
             </p>
-            <!-- <p>
+          </li>
+          <li>
+            <p>
+              Altcademy
+              <br />
+              Full-stack Web Development <br />
+            </p>
+          </li>
+          <li>
+            <p>
+              Mid Sweden University
+              <br />
+              Sound Engineering <br />
+            </p>
+          </li>
+        </ul>
+        <h2 class="normal-text">
+          <i>skills</i>
+        </h2>
+        <ul>
+          <li>
+            <p>
+              web design, UI/UX, front-end development, accessibility,
+              information architecture, editorial design, content structure, CMS
+              development
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>
+              HTML, CSS / SCSS, JavaScript, TypeScript, React, Astro, WordPress,
+              Kirby, Tailwind, Git
+            </p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>Figma, Adobe Creative Cloud</p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <p>
+              sound design, composition, audio production, QLab, Ableton Live
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!-- <p>
             GitHub:
             <a
               href="https://github.com/lnsjhnssn"
@@ -72,59 +123,73 @@ import LinusImage from "../assets/images/linus-with-plant.jpg";
               @linus-johansson-riihimaki
             </a>
           </p> -->
-          </div>
-          <div class="image-grid"></div>
-        </p>
-      </div>
-
-      <style>
-        .grid-2 {
-          margin: var(--space-xl) 0;
-          text-align: left;
-          display: grid;
-          grid-template-columns: 7fr 5fr;
-          gap: var(--space-s);
-          margin: 0 auto;
-          padding-bottom: var(--space-xl);
-        }
-
-        @media screen and (max-width: 720px) {
-          .grid-2 {
-            grid-template-columns: 1fr;
-          }
-
-          .image-grid {
-            order: -1;
-            width: 100%;
-          }
-
-          .image-about {
-            width: 100%;
-            margin-bottom: var(--space-m);
-          }
-        }
-
-        .image-grid {
-          justify-self: end;
-        }
-
-        .out-link {
-          color: var(--obsidian-accent);
-          font-weight: var(--font-weight-bold);
-        }
-
-        .out-link:hover {
-          color: light-dark(var(--text-primary), var(--text-primary-dark));
-        }
-
-        .text-decoration-none {
-          text-decoration: none;
-        }
-
-        .social-links-container p {
-          margin: 0;
-        }
-      </style>
     </div>
+    <div class="image-grid"></div>
   </main>
 </Layout>
+
+<style>
+  h2 {
+    margin-top: var(--space-3xl);
+    margin-bottom: var(--space-l);
+  }
+
+  .normal-text {
+    font-family: "IBM Plex Mono", monospace;
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--step--1);
+  }
+
+  .grid-2 {
+    margin: var(--space-xl) 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: var(--space-s);
+    margin: 0 auto;
+    padding-bottom: var(--space-xl);
+  }
+
+  @media screen and (max-width: 720px) {
+    .grid-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .image-grid {
+      order: -1;
+      width: 100%;
+    }
+
+    .image-about {
+      width: 100%;
+      margin-bottom: var(--space-m);
+    }
+  }
+
+  .image-grid {
+    justify-self: end;
+  }
+
+  .out-link {
+    color: var(--obsidian-accent);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .out-link:hover {
+    color: light-dark(var(--text-primary), var(--text-primary-dark));
+  }
+
+  .text-decoration-none {
+    text-decoration: none;
+  }
+
+  .social-links-container p {
+    margin: 0;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+</style>
