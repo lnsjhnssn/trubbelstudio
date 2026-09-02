@@ -3,12 +3,12 @@ title: La Misère du monde
 
 description: La Misère du monde - D’après Pierre Bourdieu. Mise en scène Orélie Fuchs.
 
-pubDate: "2025-12-29"
+pubDate: "2025-12-31"
 link: https://www.tpr.ch/saison-25-26/la-misere-du-monde/
 cover: "lamiseredumonde.jpg"
 coverAlt: "Showing a photo of a man with a accordeon with the text La misère du monde written under"
 subtitle: "2026 | Sound Design"
-imageCopyright: © Guillaume Perret
+imageCopyright: © Theatre St Gervais
 tags:
   - sound
   - music
@@ -30,4 +30,5 @@ Lumières : Joana Oliveira<br>
 Son : Linus Johansson<br>
 Production : Cie\*
 
-[Voir plus sur le site du TPR](https://www.tpr.ch/saison-25-26/la-misere-du-monde/)
+Prochaines dates:
+[Maison Saint-Gervais 25-28 nov 2026](https://saintgervais.ch/spectacle/la-misere-du-monde/)
