@@ -1,0 +1,104 @@
+---
+import "../styles/global.css";
+import "../styles/fonts.css";
+import { ClientRouter } from "astro:transitions";
+import Navbar from "../components/Navbar.astro";
+import FooterSocialLinks from "../components/FooterSocialLinks.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Welcome to Trubbel Studio - A creative space for digital experiences",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+
+    <meta
+      property="og:image"
+      content="https://linusriihimaki.com/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Linus Riihimäki's portfolio" />
+    <meta property="og:url" content="https://linusriihimaki.com" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://linusriihimaki.com/og-image.png"
+    />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="BHQGWBWC" defer
+    ></script>
+    <!-- / Fathom -->
+    <title>{title}</title>
+    <ClientRouter />
+    <script>
+      const workListPaths = new Set([
+        "/",
+        "/sound",
+        "/work/all",
+        "/work/web",
+        "/work/sound",
+      ]);
+
+      const normalizePath = (pathname: string) => {
+        const trimmed = pathname.replace(/\/$/, "");
+        return trimmed === "" ? "/" : trimmed;
+      };
+
+      const isWorkListPath = (pathname: string) =>
+        workListPaths.has(normalizePath(pathname));
+
+      let savedWorkListScroll: number | null = null;
+
+      document.addEventListener("astro:before-swap", (event) => {
+        if (
+          isWorkListPath(location.pathname) &&
+          isWorkListPath(event.to.pathname)
+        ) {
+          savedWorkListScroll = window.scrollY;
+        } else {
+          savedWorkListScroll = null;
+        }
+      });
+
+      document.addEventListener("astro:after-swap", () => {
+        if (savedWorkListScroll === null) return;
+        window.scrollTo({
+          left: 0,
+          top: savedWorkListScroll,
+          behavior: "instant",
+        });
+        savedWorkListScroll = null;
+      });
+    </script>
+  </head>
+
+  <body>
+    <slot />
+    <FooterSocialLinks />
+  </body>
+</html>
+
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+</style>

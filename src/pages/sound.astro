@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import Layout from "../layouts/Layout.astro";
+import LayoutSound from "../layouts/Layout-sound.astro";
 
 const soundProjects = (await getCollection("work"))
   .filter(
@@ -14,18 +14,48 @@ const soundProjects = (await getCollection("work"))
 const pageTitle = "Sound & Music — Linus Riihimäki";
 const pageDescription =
   "Selected sound design and music projects by Linus Riihimäki.";
+
+const cleanMarkdown = (text: string) =>
+  text
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[*_`#>]/g, "")
+    .replace(/<br\s*\/?>/gi, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const getProjectSummary = (project: (typeof soundProjects)[number]) => {
+  const description = project.data.description.trim();
+  if (
+    description.toLocaleLowerCase() !== project.data.title.toLocaleLowerCase()
+  ) {
+    return description;
+  }
+
+  const body =
+    "body" in project && typeof project.body === "string" ? project.body : "";
+  const paragraphs = body
+    .split(/\n\s*\n/)
+    .map(cleanMarkdown)
+    .filter(Boolean);
+
+  return (
+    paragraphs.find(
+      (paragraph) =>
+        paragraph.toLocaleLowerCase() !==
+        project.data.title.toLocaleLowerCase(),
+    ) || description
+  );
+};
 ---
 
-<Layout title={pageTitle} description={pageDescription}>
+<LayoutSound title={pageTitle} description={pageDescription}>
   <main class="sound-page">
     <header class="sound-header">
-      <p class="eyebrow">Sound &amp; Music</p>
-      <h1>I’m a musician<br />and sound designer.</h1>
+      <p class="eyebrow">Linus Riihimäki</p>
+      <h1>Sound & music for podcasts, video, theatre and dance.</h1>
       <p class="intro">
-        I make music and create sound for video, podcasts, theatre and dance.
-        Get in touch by email: <a
-          href="mailto:linus@linusriihimaki.com"
-          class="out-link">linus@linusriihimaki.com</a
+        Email: <a href="mailto:linus@linusriihimaki.com" class="out-link"
+          >linus@linusriihimaki.com</a
         >
       </p>
     </header>
@@ -49,14 +79,17 @@ const pageDescription =
 
             <div class="project-copy">
               <h2>{project.data.title}</h2>
-              <p class="project-tags">{project.data.tags.join(", ")}</p>
+              {project.data.subtitle && (
+                <p class="project-meta">{project.data.subtitle}</p>
+              )}
+              <p class="project-description">{getProjectSummary(project)}</p>
             </div>
           </li>
         ))
       }
     </ul>
   </main>
-</Layout>
+</LayoutSound>
 
 <style>
   :global(body) {
@@ -79,12 +112,14 @@ const pageDescription =
     --sound-line: rgba(255, 0, 0, 0.5);
     color: var(--sound-ink);
     padding-bottom: var(--space-3xl);
+    padding-top: var(--space-3xl);
     font-family: "Atkinson Hyperlegible Soft", sans-serif;
   }
 
   .sound-header {
     max-width: 780px;
     margin-bottom: var(--space-3xl);
+    padding: 0;
   }
 
   .eyebrow {
@@ -155,18 +190,25 @@ const pageDescription =
   h2 {
     margin: 0;
     font-family: "Atkinson Hyperlegible Soft", sans-serif;
-    font-size: var(--step-0);
-    font-weight: 400;
+    font-size: var(--step-1);
+    font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0;
   }
 
-  .project-tags {
+  .project-meta {
     margin: 0;
     font-size: var(--step--1);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    opacity: 0.62;
+    letter-spacing: 0.07em;
+    opacity: 0.7;
+  }
+
+  .project-description {
+    max-width: 62ch;
+    margin: 0 0 0;
+    font-size: var(--step-0);
+    line-height: 1.5;
   }
 
   @media (max-width: 680px) {

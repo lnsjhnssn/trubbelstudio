@@ -1,7 +1,7 @@
 ---
 title: La Misère du monde
 
-description: La Misère du monde - D’après Pierre Bourdieu. Mise en scène Orélie Fuchs.
+description: La Misère du monde by Pierre Bourdieu. Directed by Orélie Fuchs.
 
 pubDate: "2025-12-31"
 link: https://www.tpr.ch/saison-25-26/la-misere-du-monde/
