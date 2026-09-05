@@ -24,7 +24,10 @@ const currentPath = Astro.url.pathname;
 // Function to check if a link should be active
 const isActive = (path: string) => {
   if (path === "/work/web" && currentPath.startsWith("/work/web")) return true;
-  if (path === "/work/sound" && currentPath.startsWith("/work/sound"))
+  if (
+    path === "/sound" &&
+    (currentPath.startsWith("/sound") || currentPath.startsWith("/work/sound"))
+  )
     return true;
   if (
     path === "/work/all" &&
@@ -65,7 +68,7 @@ const isActive = (path: string) => {
   <div class="work-header-links">
     <a href="/work/web" class={isActive("/work/web") ? "active" : ""}>Web</a>
     <span class="separator">|</span>
-    <a href="/work/sound" class={isActive("/work/sound") ? "active" : ""}
+    <a href="/sound" class={isActive("/sound") ? "active" : ""}
       >Sound & Music</a
     >
     <span class="separator">|</span>

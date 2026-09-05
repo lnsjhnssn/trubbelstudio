@@ -53,6 +53,31 @@
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Soft";
+  src: url("/fonts/AtkinsonHyperlegibleSoft-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Soft";
+  src: url("/fonts/AtkinsonHyperlegibleSoft-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Soft";
+  src: url("/fonts/AtkinsonHyperlegibleSoft-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: "IBM Plex Mono";
   src: url("/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf") format("ttf");

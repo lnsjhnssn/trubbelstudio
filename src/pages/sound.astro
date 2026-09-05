@@ -1,0 +1,181 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+
+const soundProjects = (await getCollection("work"))
+  .filter(
+    (project) =>
+      project.data.published !== false &&
+      project.data.tags?.some((tag) => tag === "sound" || tag === "music"),
+  )
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const pageTitle = "Sound & Music — Linus Riihimäki";
+const pageDescription =
+  "Selected sound design and music projects by Linus Riihimäki.";
+---
+
+<Layout title={pageTitle} description={pageDescription}>
+  <main class="sound-page">
+    <header class="sound-header">
+      <p class="eyebrow">Sound &amp; Music</p>
+      <h1>I’m a musician<br />and sound designer.</h1>
+      <p class="intro">
+        I make music and create sound for video, podcasts, theatre and dance.
+        Get in touch by email: <a
+          href="mailto:linus@linusriihimaki.com"
+          class="out-link">linus@linusriihimaki.com</a
+        >
+      </p>
+    </header>
+
+    <ul class="project-list">
+      {
+        soundProjects.map((project, index) => (
+          <li class="project-item">
+            <div class="project-image-wrap">
+              {project.data.cover && (
+                <Image
+                  class="project-image"
+                  src={project.data.cover}
+                  alt={project.data.coverAlt || project.data.title}
+                  widths={[320, 480, 640]}
+                  sizes="(max-width: 640px) 100vw, 240px"
+                  loading={index < 2 ? "eager" : "lazy"}
+                />
+              )}
+            </div>
+
+            <div class="project-copy">
+              <h2>{project.data.title}</h2>
+              <p class="project-tags">{project.data.tags.join(", ")}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    background: #cda5ef;
+    color: #111;
+    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+  }
+
+  :global(body > nav),
+  :global(body > footer),
+  :global(body > nav h1),
+  :global(body > nav a),
+  :global(body > footer a) {
+    color: #111;
+    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+  }
+
+  .sound-page {
+    --sound-ink: #111;
+    --sound-line: rgba(255, 0, 0, 0.5);
+    color: var(--sound-ink);
+    padding-bottom: var(--space-3xl);
+    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+  }
+
+  .sound-header {
+    max-width: 780px;
+    margin-bottom: var(--space-3xl);
+  }
+
+  .eyebrow {
+    display: block;
+    margin: 0 0 var(--space-l);
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    opacity: 0.72;
+  }
+
+  h1 {
+    max-width: 760px;
+    margin: 0;
+    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+    font-size: clamp(2.7rem, 7vw, 4rem);
+    font-weight: 500;
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    text-wrap: balance;
+  }
+
+  .intro {
+    max-width: 620px;
+    margin: var(--space-xl) 0 var(--space-l);
+    font-size: var(--step-1);
+    line-height: 1.55;
+  }
+
+  .project-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--sound-line);
+    list-style: none;
+  }
+
+  .project-item {
+    display: grid;
+    grid-template-columns: minmax(150px, 350px) minmax(0, 1fr);
+    align-items: center;
+    gap: var(--space-l);
+    min-width: 0;
+    padding: var(--space-l) 0;
+    border-bottom: 1px solid var(--sound-line);
+  }
+
+  .project-image-wrap {
+    display: block;
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 0;
+    filter: saturate(0.72) contrast(0.94);
+  }
+
+  .project-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "Atkinson Hyperlegible Soft", sans-serif;
+    font-size: var(--step-0);
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
+
+  .project-tags {
+    margin: 0;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.62;
+  }
+
+  @media (max-width: 680px) {
+    .sound-header {
+      margin-bottom: var(--space-2xl);
+    }
+
+    .project-item {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
