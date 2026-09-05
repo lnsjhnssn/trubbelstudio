@@ -1,6 +1,6 @@
 ---
 title: Under marken
-description: Sound art, music and installation. Exhibition together with the writer Andrea Lungren and the artist Helena Wikström. Premiered at Gallery Syster in Luleå 2021.
+description: Sound installation. Exhibition together with the writer Andrea Lungren and the artist Helena Wikström. Premiered at Gallery Syster in Luleå 2021.
 subtitle: "2021 | Sound Artist, Co-Creator | Exhibition"
 pubDate: "2021-03-19"
 link: https://www.helenawikstrom.com/under-marken

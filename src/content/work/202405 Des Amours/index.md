@@ -1,7 +1,7 @@
 ---
 title: Des Amours
 
-description: Sound design for the performance Des Amours.
+description: Sound design and mix for the film Des Amours. Screened as part of the Agora Les Amours festival at Théâtre Am Stram Gram.
 
 pubDate: "2024-12-30"
 cover: "les-amours.png"

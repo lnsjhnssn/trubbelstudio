@@ -1,7 +1,7 @@
 ---
 title: ddd - Podcast series
 
-description: Sound design for the ddd podcast episode 1.
+description: Sound and mix for the ddd podcast.
 
 pubDate: "2024-10-19"
 link: https://avdc-ddd.ch/resources/podcasts/
